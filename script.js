@@ -215,7 +215,7 @@ topicsSelect.addEventListener("change", (e) => {
         const preambleText = `
       <div class="preamble"
            style="background: linear-gradient(135deg, #ff9f43, #feca57, #ff6b6b);
-                  color: #1a1a2e; padding: 1rem 0.5rem; border-radius: 15px;
+                  color: #1a1a2e; padding: 0.5rem 0.5rem; border-radius: 15px;
                   font-size:0.8rem; line-height: 0.5; box-shadow: 0 0 20px rgba(255,165,0,0.3);
                   animation: fadeInUpChat 1.2s ease-out;">
          <strong>The Preamble to the Constitution of India</strong><br>
@@ -594,4 +594,5 @@ function handleQuizResponse(raw) {
 
 
 /* ---------- End of file ---------- */}
+
 
