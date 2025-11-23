@@ -2566,6 +2566,51 @@
     }
 }
 
+/* --- PREAMBLE BOX STYLE --- */
+.preamble-box {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    padding: 12px;
+    width: 92%;
+    max-width: 330px;
+    margin: auto;
+    border: 2px solid #ff884d;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+
+    /* Make it square-like */
+    aspect-ratio: 1 / 1.3;   /* Adjust height vs width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+/* --- PREAMBLE TEXT --- */
+.preamble-text {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    text-align: center;
+    color: #222;
+    overflow-y: auto;
+    max-height: 100%;
+    padding-right: 6px;
+}
+
+/* --- MOBILE OPTIMIZATION --- */
+@media (max-width: 480px) {
+    .preamble-box {
+        width: 95%;
+        aspect-ratio: 1 / 1.4;
+        padding: 10px;
+    }
+
+    .preamble-text {
+        font-size: 0.72rem;
+        line-height: 1.35;
+    }
+}
 
 
 
