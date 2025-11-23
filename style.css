@@ -1,0 +1,2408 @@
+    /* 🎨 MODERN CONSTITUTION BOT - CSS VARIABLES */
+    
+     :root {
+        /* Warm Sunset Color Palette */
+        --primary: #ff6b6b;
+        --primary-dark: #ee5a52;
+        --secondary: #feca57;
+        --accent-orange: #ff9f43;
+        --accent-coral: #ff6348;
+        --accent-rose: #ff7979;
+        /* Neutrals */
+        --bg-light: #f8f9fa;
+        --bg-card: #ffffff;
+        --text-primary: #1a1a2e;
+        --text-secondary: #6b7280;
+        --border: #e5e7eb;
+        /* Shadows */
+        --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+        --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
+        --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.15);
+        --shadow-glow: 0 4px 20px rgba(255, 107, 107, 0.4);
+        /* Spacing */
+        --gap-sm: 0.5rem;
+        --gap-md: 1rem;
+        --gap-lg: 1.5rem;
+        /* Border Radius */
+        --radius-sm: 8px;
+        --radius-md: 12px;
+        --radius-lg: 20px;
+        --radius-xl: 25px;
+    }
+    /* 🌙 Dark Mode Variables */
+    
+    .dark-mode {
+        --bg-light: #0f0f1e;
+        --bg-card: #1a1a2e;
+        --text-primary: #e8eaed;
+        --text-secondary: #9ca3af;
+        --border: #2d2d44;
+    }
+    /* 🌟 RESET & BASE */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #ff6b6b 0%, #feca57 50%, #ff9f43 100%);
+        color: var(--text-primary);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+    /* ✨ ANIMATED BACKGROUND BLOBS */
+    
+    .blob {
+        position: fixed;
+        border-radius: 50%;
+        filter: blur(80px);
+        opacity: 0.5;
+        animation: floatBlob 20s infinite ease-in-out;
+        z-index: -1;
+        pointer-events: none;
+    }
+    
+    .blob-purple {
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(255, 107, 107, 0.6), transparent);
+        top: -100px;
+        left: -100px;
+        animation-delay: 0s;
+    }
+    
+    .blob-cyan {
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(254, 202, 87, 0.6), transparent);
+        bottom: -100px;
+        right: -100px;
+        animation-delay: 7s;
+    }
+    
+    .blob-pink {
+        width: 450px;
+        height: 450px;
+        background: radial-gradient(circle, rgba(255, 159, 67, 0.5), transparent);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation-delay: 14s;
+    }
+    
+    @keyframes floatBlob {
+        0%,
+        100% {
+            transform: translate(0, 0) scale(1);
+        }
+        33% {
+            transform: translate(100px, -100px) scale(1.1);
+        }
+        66% {
+            transform: translate(-100px, 100px) scale(0.9);
+        }
+    }
+    /* 📦 CONTAINER */
+    
+    .container {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+    /* 🎯 UTILITY CLASSES */
+    
+    .flex-center {
+        display: flex;
+        align-items: center;
+    }
+    
+    .flex-between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .gap-sm {
+        gap: var(--gap-sm);
+    }
+    
+    .gap-md {
+        gap: var(--gap-md);
+    }
+    
+    .gap-lg {
+        gap: var(--gap-lg);
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .text-gradient {
+        color: #1a1a2e !important;
+    }
+    /* 🇮🇳 HEADER */
+    
+    header {
+        background: linear-gradient(135deg, #ffffff 0%, #fff5e6 100%);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 4px 30px rgba(255, 107, 107, 0.2);
+        border-bottom: 3px solid transparent;
+        border-image: linear-gradient(90deg, #ff6b6b, #feca57, #ff9f43) 1;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 1rem 0 !important;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        color: #1a1a2e !important;
+        text-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);
+    }
+    
+    header h3 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #ff6b6b !important;
+        opacity: 1;
+    }
+    
+    .icon-float flag-round {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    /* 🎨 BUTTONS */
+    
+    .btn {
+        padding: 0.7rem 1.5rem;
+        border: none;
+        border-radius: var(--radius-lg);
+        font-weight: 600;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        box-shadow: var(--shadow-sm);
+    }
+    
+    .btn-primary {
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        color: white;
+        box-shadow: var(--shadow-glow);
+    }
+    
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
+    }
+    
+    .btn-primary:active {
+        transform: translateY(0);
+    }
+    
+    .btn-secondary {
+        background: rgba(255, 255, 255, 0.95);
+        color: var(--text-primary);
+        border: 1px solid rgba(102, 126, 234, 0.2);
+        margin: 0 0.5rem;
+    }
+    
+    .btn-secondary:hover {
+        background: linear-gradient(135deg, #ff6b6b, #ff9f43);
+        color: white;
+        border-color: transparent;
+        transform: translateY(-2px);
+    }
+    
+    .btn-outline {
+        background: rgba(255, 255, 255, 0.9);
+        color: #ff6b6b;
+        border: 2px solid rgba(255, 107, 107, 0.3);
+    }
+    
+    .btn-outline:hover {
+        background: linear-gradient(135deg, #ff6b6b, #feca57);
+        color: white;
+        border-color: transparent;
+        transform: scale(1.05);
+    }
+    
+    .btn-sm {
+        padding: 0.6rem;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        font-size: 1.2rem;
+    }
+    /* 💬 CHAT CARD */
+    
+    .card {
+        background: rgba(255, 255, 255, 0.98);
+        border-radius: var(--radius-lg);
+        padding: 2rem;
+        box-shadow: var(--shadow-lg);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    .card-glass {
+        backdrop-filter: blur(20px);
+        background: rgba(255, 255, 255, 0.95);
+    }
+    
+    #chat-area {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        scroll-behavior: smooth;
+        overflow-y: auto;
+    }
+    /* Custom Scrollbar */
+    
+    #chat-area::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    #chat-area::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+    }
+    
+    #chat-area::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #ff6b6b, #feca57);
+        border-radius: 10px;
+    }
+    
+    #chat-area::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, #feca57, #ff9f43);
+    }
+    /* 🔄 LOADING SPINNER */
+    
+    .loading {
+        padding: 2rem;
+    }
+    
+    .spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid rgba(255, 107, 107, 0.2);
+        border-top-color: #ff6b6b;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    /* 💬 CHAT MESSAGES */
+    
+    .message {
+        padding: 1rem 1.4rem;
+        border-radius: 18px;
+        max-width: 75%;
+        line-height: 1.6;
+        animation: slideIn 0.4s ease;
+        box-shadow: var(--shadow-sm);
+        position: relative;
+    }
+    
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .message-bot {
+        background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+        color: var(--text-primary);
+        align-self: flex-start;
+        border-bottom-left-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    .message-bot::before {
+        content: "🤖";
+        position: absolute;
+        left: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+        background: linear-gradient(135deg, #ff6b6b, #feca57);
+        padding: 0.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    }
+    
+    .message-user {
+        background: linear-gradient(135deg, #ff6b6b 0%, #ff9f43 100%);
+        color: white;
+        align-self: flex-end;
+        border-bottom-right-radius: 4px;
+        margin-left: auto;
+        box-shadow: 0 4px 20px rgba(255, 107, 107, 0.4);
+    }
+    
+    .message-user::after {
+        content: "👤";
+        position: absolute;
+        right: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+        background: linear-gradient(135deg, #feca57, #ff9f43);
+        padding: 0.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(254, 202, 87, 0.4);
+    }
+    /* Typing Indicator */
+    
+    .typing {
+        padding: 1rem 1.4rem;
+        background: linear-gradient(135deg, #f5f7fa, #e8ecf1);
+        border-radius: 18px;
+        border-bottom-left-radius: 4px;
+        max-width: 80px;
+        display: flex;
+        gap: 0.4rem;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--shadow-sm);
+    }
+    
+    .typing span {
+        width: 8px;
+        height: 8px;
+        background: linear-gradient(135deg, #ff6b6b, #feca57);
+        border-radius: 50%;
+        animation: typingBounce 1.4s infinite ease-in-out;
+    }
+    
+    .typing span:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    
+    .typing span:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+    
+    @keyframes typingBounce {
+        0%,
+        60%,
+        100% {
+            transform: translateY(0);
+            opacity: 0.7;
+        }
+        30% {
+            transform: translateY(-10px);
+            opacity: 1;
+        }
+    }
+    /* 🖊️ INPUT AREA */
+    
+    #user-input {
+        flex: 1;
+        padding: 1rem 1.5rem;
+        border: 2px solid transparent;
+        border-radius: var(--radius-xl);
+        font-size: 0.95rem;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        box-shadow: var(--shadow-md);
+        transition: all 0.3s ease;
+        outline: none;
+        color: var(--text-primary);
+    }
+    
+    #user-input::placeholder {
+        color: var(--text-secondary);
+    }
+    
+    #user-input:focus {
+        border-color: #ff6b6b;
+        box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
+        transform: translateY(-2px);
+    }
+    /* ❤️ FOOTER */
+    
+    footer {
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        margin-top: auto;
+    }
+    
+    footer p {
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 0.9rem;
+    }
+    
+    footer strong {
+        background: linear-gradient(135deg, #ff6b6b, #feca57);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 700;
+    }
+    /* 🌙 DARK MODE */
+    
+    .dark-mode {
+        background: linear-gradient(135deg, #1a1a2e 0%, #2d1b1b 50%, #3a2a1a 100%);
+    }
+    
+    .dark-mode header {
+        background: linear-gradient(135deg, #2d2d44 0%, #3a2828 100%);
+        border-image: linear-gradient(90deg, #ff6b6b, #feca57, #ff9f43) 1;
+        border-radius: 0;
+    }
+    
+    .dark-mode header h1 {
+        background: linear-gradient(135deg, #ff6b6b, #feca57);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        text-shadow: none;
+    }
+    
+    .dark-mode header h3 {
+        color: #feca57;
+    }
+    
+    .dark-mode .card {
+        background: rgba(26, 26, 46, 0.98);
+        border: 1px solid var(--border);
+    }
+    
+    .dark-mode .message-bot {
+        background: linear-gradient(135deg, #2d2d44 0%, #1f1f35 100%);
+        color: var(--text-primary);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .dark-mode .typing {
+        background: linear-gradient(135deg, #2d2d44, #1f1f35);
+    }
+    
+    .dark-mode #user-input {
+        background: rgba(26, 26, 46, 0.98);
+        border: 2px solid var(--border);
+        color: var(--text-primary);
+    }
+    
+    .dark-mode #user-input:focus {
+        border-color: #ff6b6b;
+    }
+    
+    .dark-mode .btn-outline {
+        background: rgba(26, 26, 46, 0.9);
+        border: 2px solid rgba(255, 107, 107, 0.3);
+        color: #ff6b6b;
+    }
+    
+    .dark-mode .btn-secondary {
+        background: rgba(26, 26, 46, 0.9);
+        border: 1px solid var(--border);
+        color: var(--text-primary);
+    }
+    
+    .dark-mode footer {
+        background: rgba(15, 15, 30, 0.8);
+        border-top: 1px solid var(--border);
+    }
+    
+    .dark-mode footer p {
+        color: rgba(255, 255, 255, 0.8);
+    }
+    /* 📱 RESPONSIVE DESIGN */
+    
+    @media (max-width: 768px) {
+        .container {
+            padding: 0 1rem;
+        }
+        header h1 {
+            font-size: 1.3rem;
+        }
+        header h3 {
+            font-size: 0.8rem;
+        }
+        .btn-sm {
+            width: 40px;
+            height: 40px;
+            font-size: 1.1rem;
+        }
+        #chat-area {
+            padding: 1.5rem;
+            height: 55vh !important;
+        }
+        .message {
+            max-width: 85%;
+            font-size: 0.9rem;
+        }
+        .message-bot::before,
+        .message-user::after {
+            display: none;
+        }
+        #user-input {
+            padding: 0.9rem 1.2rem;
+            font-size: 0.9rem;
+        }
+        .btn {
+            padding: 0.8rem 1.2rem;
+            font-size: 0.9rem;
+        }
+        .btn-secondary {
+            margin: 0.3rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 1.2rem;
+        }
+        header h3 {
+            display: none;
+        }
+        .btn-sm {
+            width: 38px;
+            height: 38px;
+        }
+        #chat-area {
+            padding: 1rem;
+            height: 50vh !important;
+        }
+        .message {
+            max-width: 90%;
+            font-size: 0.85rem;
+            padding: 0.9rem 1.2rem;
+        }
+        #user-input {
+            font-size: 0.85rem;
+        }
+        .btn-secondary {
+            width: 100%;
+            margin: 0.3rem 0;
+        }
+        footer {
+            padding: 1rem;
+        }
+        footer p {
+            font-size: 0.85rem;
+        }
+    }
+    /* Landscape Mode */
+    
+    @media (max-width: 768px) and (orientation: landscape) {
+        #chat-area {
+            height: 45vh !important;
+        }
+    }
+    /* Touch Devices */
+    
+    @media (hover: none) and (pointer: coarse) {
+        .btn,
+        #user-input {
+            min-height: 44px;
+        }
+    }
+    /* Accessibility */
+    
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+    /* Additional Message Styles for Dynamic Content */
+    
+    .message strong {
+        font-weight: 700;
+        color: inherit;
+    }
+    
+    .message code {
+        background: rgba(0, 0, 0, 0.1);
+        padding: 0.2rem 0.4rem;
+        border-radius: 4px;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9em;
+    }
+    
+    .message a {
+        color: #ff6b6b;
+        text-decoration: underline;
+        transition: opacity 0.2s;
+    }
+    
+    .message a:hover {
+        opacity: 0.8;
+    }
+    
+    .dark-mode .message-user a {
+        color: white;
+        text-decoration: underline;
+    }
+    /* 🧾 Dropdown Styling */
+    
+    .dropdown {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 0.4rem 0.8rem;
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-sm);
+        transition: all 0.3s ease;
+    }
+    
+    .dropdown:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+    }
+    
+    .dropdown-label {
+        font-weight: 600;
+        color: var(--text-primary);
+        font-size: 0.9rem;
+    }
+    
+    .dropdown-select {
+        border: 2px solid rgba(255, 107, 107, 0.3);
+        border-radius: var(--radius-md);
+        padding: 0.4rem 0.8rem;
+        background: white;
+        color: var(--text-primary);
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .dropdown-select:hover,
+    .dropdown-select:focus {
+        border-color: #ff6b6b;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        outline: none;
+    }
+    /* Dark mode support for dropdown */
+    
+    .dark-mode .dropdown {
+        background: rgba(26, 26, 46, 0.9);
+    }
+    
+    .dark-mode .dropdown-label {
+        color: var(--text-primary);
+    }
+    
+    .dark-mode .dropdown-select {
+        background: rgba(26, 26, 46, 0.9);
+        color: var(--text-primary);
+        border: 2px solid var(--border);
+    }
+    
+    .dark-mode .dropdown-select:hover,
+    .dark-mode .dropdown-select:focus {
+        border-color: #ff6b6b;
+    }
+    /* 🇮🇳 Make the flag circular */
+    
+    .flag-round {
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid rgba(255, 255, 255, 0.6);
+        box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        background: white;
+    }
+    /* 🌇 Setting Sun Gradient Buttons */
+    
+    .btn-sunset {
+        background: linear-gradient(135deg, #ff9f43, #ff6b6b);
+        color: #fff;
+        border: none;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+        transition: all 0.3s ease;
+    }
+    
+    .btn-sunset:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 25px rgba(255, 159, 67, 0.6);
+    }
+    
+    .btn-sunset:active {
+        transform: scale(0.98);
+    }
+    /* 🎤 Voice Button (Sunset Glow Effect) */
+    
+    #voice-btn.listening {
+        background: linear-gradient(135deg, #ff6b6b, #ff9f43);
+        box-shadow: 0 0 15px rgba(255, 107, 107, 0.6);
+    }
+    /* 🌙 Dark Mode for Sunset Buttons */
+    
+    .dark-mode .btn-sunset {
+        background: linear-gradient(135deg, #ff6b6b, #ff9f43);
+        color: white;
+    }
+    
+    .dark-mode .btn-sunset:hover {
+        box-shadow: 0 6px 25px rgba(255, 159, 67, 0.8);
+    }
+    /* 💬 CHAT MESSAGES - ENHANCED DIFFERENCE */
+    
+    .message {
+        padding: 1rem 1.4rem;
+        border-radius: 18px;
+        max-width: 75%;
+        line-height: 1.6;
+        animation: fadeInUp 0.35s ease;
+        position: relative;
+        word-wrap: break-word;
+        box-shadow: var(--shadow-sm);
+        margin: 0.3rem 0;
+    }
+    /* 🤖 BOT MESSAGES */
+    
+    .message-bot {
+        align-self: flex-start;
+        background: linear-gradient(145deg, #ffffffee 0%, #f7f7f7ee 100%);
+        color: var(--text-primary);
+        border-left: 5px solid #ff6b6b;
+        border-radius: 16px 16px 16px 4px;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.2);
+    }
+    /* Add flag-like gradient bar for bot side */
+    
+    .message-bot::before {
+        content: "";
+        position: absolute;
+        left: -8px;
+        top: 0;
+        bottom: 0;
+        width: 5px;
+        border-radius: 4px;
+        background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+    }
+    /* 👤 USER MESSAGES */
+    
+    .message-user {
+        align-self: flex-end;
+        background: linear-gradient(135deg, #ff9f43, #ff6b6b);
+        color: white;
+        border-radius: 16px 16px 4px 16px;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+        margin-left: auto;
+    }
+    /* ✨ Fade and float animation */
+    
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(12px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /* 🌙 DARK MODE COMPATIBILITY */
+    
+    .dark-mode .message-bot {
+        background: linear-gradient(135deg, #2d2d44 0%, #1f1f35 100%);
+        color: var(--text-primary);
+        border-left: 5px solid #ff6b6b;
+    }
+    
+    .dark-mode .message-user {
+        background: linear-gradient(135deg, #ff6b6b, #ff9f43);
+        color: #fff;
+    }
+    /* =====================================================
+   🌟 VIDHA ENHANCEMENTS (Improved for Visibility & Style)
+   Developed with pride 🇮🇳 by Keerthishree
+===================================================== */
+    /* 🇮🇳 Glowing Flag Animation */
+    
+    .flag-round {
+        animation: flagGlow 3s ease-in-out infinite alternate;
+    }
+    
+    @keyframes flagGlow {
+        0% {
+            box-shadow: 0 0 10px rgba(255, 153, 51, 0.5);
+        }
+        50% {
+            box-shadow: 0 0 25px rgba(19, 136, 8, 0.6);
+        }
+        100% {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+    }
+    /* 💬 "VIDHA is typing..." text above dots */
+    
+    .typing-status {
+        font-style: italic;
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        opacity: 0.8;
+        margin-left: 0.8rem;
+        animation: fadeIn 0.4s ease-in;
+    }
+    /* 🇮🇳 Footer Signature with visible text + animated underline */
+    
+    footer {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        border-top: 2px solid rgba(0, 0, 0, 0.05);
+        padding: 1.2rem;
+        text-align: center;
+    }
+    
+    footer p {
+        position: relative;
+        display: inline-block;
+        color: #000000;
+        /* ✅ solid black for visibility */
+        font-weight: 600;
+        letter-spacing: 0.3px;
+    }
+    
+    footer p::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, #FF9933, #FFFFFF, #138808);
+        border-radius: 3px;
+        animation: underlineFlow 4s linear infinite;
+    }
+    
+    @keyframes underlineFlow {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+    /* 💡 Idle prompt fade-in */
+    
+    .idle-prompt {
+        opacity: 0;
+        animation: fadeIn 0.8s forwards;
+        font-size: 0.95rem;
+        color: var(--text-secondary);
+        margin-top: 0.5rem;
+    }
+    /* 🎬 Grand entry animation for chat area */
+    
+    @keyframes fadeInUpChat {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+            filter: blur(5px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+        }
+    }
+    
+    .chat-fade-in {
+        animation: fadeInUpChat 1.2s ease-out;
+    }
+    /* =====================================================
+   🌙 DARK MODE FOOTER – VIDHA
+   Keeps tricolor underline and improves readability
+===================================================== */
+    
+    .dark-mode footer {
+        background: rgba(26, 26, 46, 0.9);
+        /* dark glass effect */
+        backdrop-filter: blur(14px);
+        border-top: 2px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .dark-mode footer p {
+        color: #ffffff;
+        /* bright text for contrast */
+        font-weight: 600;
+        letter-spacing: 0.4px;
+    }
+    
+    .dark-mode footer p::after {
+        background: linear-gradient(90deg, #FF9933, #FFFFFF, #138808);
+        opacity: 0.85;
+    }
+    /* =====================================================
+   🇮🇳 FLAG GLOW EFFECT – LIGHT & DARK MODE ADAPTIVE
+   Adds a soft tricolor aura to the flag that changes tone
+===================================================== */
+    /* 🌞 Light Mode Flag Glow */
+    
+    .flag-round {
+        animation: flagGlowLight 4s ease-in-out infinite alternate;
+        transition: box-shadow 0.5s ease, transform 0.3s ease;
+    }
+    
+    @keyframes flagGlowLight {
+        0% {
+            box-shadow: 0 0 10px rgba(255, 153, 51, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+        50% {
+            box-shadow: 0 0 25px rgba(19, 136, 8, 0.6), 0 0 30px rgba(255, 255, 255, 0.5);
+        }
+        100% {
+            box-shadow: 0 0 15px rgba(255, 153, 51, 0.4), 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+    }
+    /* 🌙 Dark Mode Flag Glow */
+    
+    .dark-mode .flag-round {
+        animation: flagGlowDark 4s ease-in-out infinite alternate;
+    }
+    
+    @keyframes flagGlowDark {
+        0% {
+            box-shadow: 0 0 12px rgba(255, 153, 51, 0.7), 0 0 22px rgba(19, 136, 8, 0.5), 0 0 35px rgba(255, 255, 255, 0.2);
+        }
+        50% {
+            box-shadow: 0 0 25px rgba(19, 136, 8, 0.8), 0 0 45px rgba(255, 255, 255, 0.3);
+        }
+        100% {
+            box-shadow: 0 0 15px rgba(255, 153, 51, 0.7), 0 0 25px rgba(19, 136, 8, 0.6);
+        }
+    }
+    /* Hover Enhancement (Both Modes) */
+    
+    .flag-round:hover {
+        transform: scale(1.08);
+        box-shadow: 0 0 35px rgba(255, 255, 255, 0.4);
+    }
+    /* =====================================================
+   🌈 VIDHA MoodGlow – Emotional Response Styling
+   Developed by Keerthishree 🌸
+===================================================== */
+    /* Smooth transitions for all mood-based effects */
+    
+    body {
+        transition: background 1.5s ease, box-shadow 1.5s ease, filter 1.5s ease;
+    }
+    /* ✨ Happy Mood — Warm, glowing optimism */
+    
+    body.happy-mood {
+        box-shadow: inset 0 0 120px rgba(255, 193, 7, 0.35);
+        background: radial-gradient(circle at center, #fff3cd 0%, #ffeeba 30%, #fffdf5 100%);
+        filter: brightness(1.05);
+    }
+    /* 🌿 Calm Mood — Cool and serene */
+    
+    body.calm-mood {
+        box-shadow: inset 0 0 100px rgba(0, 128, 255, 0.25);
+        background: radial-gradient(circle at center, #e3f2fd 0%, #bbdefb 40%, #f8f9fa 100%);
+        filter: brightness(0.98);
+    }
+    /* 🇮🇳 Festive Mood — Constitution Day patriotic theme */
+    
+    body.festive-mood {
+        box-shadow: inset 0 0 160px rgba(255, 153, 51, 0.5), inset 0 0 180px rgba(19, 136, 8, 0.3);
+        background: linear-gradient(135deg, #ff9933 0%, #ffffff 50%, #138808 100%);
+        filter: brightness(1.1);
+    }
+    /* 🩵 Smooth animation for soft color pulsing */
+    
+    @keyframes softPulse {
+        0%,
+        100% {
+            filter: brightness(1);
+        }
+        50% {
+            filter: brightness(1.08);
+        }
+    }
+    /* Apply gentle pulsing glow for emotional moods */
+    
+    body.happy-mood,
+    body.calm-mood,
+    body.festive-mood {
+        animation: softPulse 6s infinite ease-in-out;
+    }
+    /* =====================================================
+   💬 VIDHA Chat MoodGlow – Reactive Emotion Styling
+   Designed by Keerthishree 🌸
+===================================================== */
+    /* ✨ Smooth color transitions for all chat bubbles */
+    
+    .message-bot,
+    .message-user {
+        transition: background 1.2s ease, box-shadow 1.2s ease, transform 0.4s ease;
+    }
+    /* 🌞 Happy mood — golden warmth */
+    
+    body.happy-mood .message-bot {
+        background: linear-gradient(145deg, #fff6e1, #ffebbb);
+        box-shadow: 0 4px 20px rgba(255, 200, 80, 0.4);
+        border-left: 4px solid #ffcc33;
+    }
+    
+    body.happy-mood .message-user {
+        background: linear-gradient(145deg, #ffb347, #ff6b6b);
+        box-shadow: 0 4px 20px rgba(255, 165, 0, 0.5);
+    }
+    /* 🌿 Calm mood — peaceful blue tones */
+    
+    body.calm-mood .message-bot {
+        background: linear-gradient(145deg, #e8f3ff, #d4e8ff);
+        box-shadow: 0 4px 20px rgba(0, 128, 255, 0.25);
+        border-left: 4px solid #7bbcff;
+    }
+    
+    body.calm-mood .message-user {
+        background: linear-gradient(145deg, #a2c2ff, #6aa6ff);
+        box-shadow: 0 4px 25px rgba(0, 123, 255, 0.35);
+    }
+    /* 🇮🇳 Festive mood — tricolor spirit */
+    
+    body.festive-mood .message-bot {
+        background: linear-gradient(135deg, #fffaf0 0%, #ffffff 60%, #f5f5f5 100%);
+        border-left: 6px solid transparent;
+        border-image: linear-gradient(to bottom, #ff9933, #ffffff, #138808) 1;
+        box-shadow: 0 6px 25px rgba(255, 153, 51, 0.35);
+    }
+    
+    body.festive-mood .message-user {
+        background: linear-gradient(135deg, #ff9f43, #ff6b6b);
+        box-shadow: 0 4px 25px rgba(255, 107, 107, 0.4);
+    }
+    /* 💫 Gentle floating pulse for highlighted emotion */
+    
+    @keyframes chatPulse {
+        0%,
+        100% {
+            transform: translateY(0);
+            filter: brightness(1);
+        }
+        50% {
+            transform: translateY(-2px);
+            filter: brightness(1.08);
+        }
+    }
+    
+    body.happy-mood .message-bot,
+    body.calm-mood .message-bot,
+    body.festive-mood .message-bot {
+        animation: chatPulse 6s ease-in-out infinite;
+    }
+    /* 📜 Preamble Styling */
+    
+    .message-bot strong {
+        color: #d35400;
+        font-size: 1.1rem;
+    }
+    
+    .message-bot em {
+        color: #2c3e50;
+        font-style: normal;
+        line-height: 1.7;
+        display: block;
+        background: #fffdf5;
+        border-left: 4px solid #ff9933;
+        border-right: 4px solid #138808;
+        padding: 1rem;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+    /* 📜 Preamble Styling - Setting Sun Theme */
+    
+    .message-bot.preamble {
+        background: linear-gradient(135deg, #ff9f43, #ff6b6b);
+        color: #fff;
+        padding: 1.2rem;
+        border-radius: 18px;
+        box-shadow: 0 4px 20px rgba(255, 107, 107, 0.4);
+        line-height: 1.7;
+        font-size: 1rem;
+    }
+    
+    .message-bot.preamble strong {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+    }
+    
+    .message-bot.preamble em {
+        display: block;
+        margin-top: 0.8rem;
+        font-style: normal;
+        color: #fff;
+        opacity: 0.95;
+    }
+    /* 🌅 Preamble Glow Animation */
+    
+    .message-bot .preamble {
+        background: linear-gradient(135deg, #ff9f43, #ff6b6b, #ff9f43);
+        background-size: 300% 300%;
+        animation: preambleGlow 8s ease-in-out infinite;
+        color: #fff;
+        padding: 1.2rem 1.5rem;
+        border-radius: 18px;
+        box-shadow: 0 4px 25px rgba(255, 107, 107, 0.45);
+        line-height: 1.7;
+        font-size: 1rem;
+    }
+    
+    @keyframes preambleGlow {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    /* 🌅 Preamble Glow Animation + Entry Fade */
+    
+    .message-bot .preamble {
+        background: linear-gradient(135deg, #ff9f43, #ff6b6b, #ff9f43);
+        background-size: 300% 300%;
+        animation: preambleGlow 8s ease-in-out infinite, fadeInUpPreamble 1.2s ease-out;
+        color: #fff;
+        padding: 1.3rem 1.6rem;
+        border-radius: 20px;
+        box-shadow: 0 6px 25px rgba(255, 107, 107, 0.45);
+        line-height: 1.8;
+        font-size: 1rem;
+        margin-top: 0.8rem;
+        text-align: justify;
+        letter-spacing: 0.2px;
+    }
+    
+    @keyframes preambleGlow {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    @keyframes fadeInUpPreamble {
+        0% {
+            opacity: 0;
+            transform: translateY(25px) scale(0.98);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    
+    .message-bot .preamble strong {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        display: block;
+        margin-bottom: 0.8rem;
+        text-align: center;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+    .message-bot .preamble em {
+        display: block;
+        margin-top: 0.8rem;
+        font-style: normal;
+        color: #fff;
+        opacity: 0.95;
+        line-height: 1.8;
+    }
+    /* 🌇 Enhanced Readable Preamble Card (Improved Contrast) */
+    
+    .message-bot .preamble {
+        background: linear-gradient(135deg, #fff5ec, #ffe3d3, #ffd5c2);
+        background-size: 200% 200%;
+        animation: fadeInUpPreamble 1.2s ease-out, preambleSoftGlow 10s ease-in-out infinite;
+        color: #1a1a1a;
+        /* dark text for contrast */
+        padding: 1.3rem 1.6rem;
+        border-radius: 20px;
+        box-shadow: 0 6px 25px rgba(255, 107, 107, 0.45);
+        line-height: 1.9;
+        font-size: 1.05rem;
+        margin-top: 0.8rem;
+        text-align: justify;
+        letter-spacing: 0.2px;
+    }
+    /* 🌤 Gentle animated sunlight shimmer */
+    
+    @keyframes preambleSoftGlow {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    /* 🌄 Smooth fade-in animation */
+    
+    @keyframes fadeInUpPreamble {
+        0% {
+            opacity: 0;
+            transform: translateY(25px) scale(0.98);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    
+    .message-bot .preamble strong {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        display: block;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: #ff6b35;
+        /* sunset orange highlight */
+    }
+    
+    .message-bot .preamble em {
+        display: block;
+        margin-top: 0.8rem;
+        font-style: normal;
+        color: #222;
+        opacity: 0.95;
+        line-height: 1.9;
+    }
+    /* =====================================================
+   🇮🇳 PREAMBLE CARD – With Ashoka Chakra Watermark
+   Refined for VIDHA by Keerthishree ✨
+===================================================== */
+    
+    .message-bot .preamble {
+        position: relative;
+        background: linear-gradient(135deg, #fff8ef, #ffe9d6, #ffd7ba);
+        background-size: 200% 200%;
+        animation: fadeInUpPreamble 1.2s ease-out, preambleSoftGlow 10s ease-in-out infinite;
+        color: #1a1a1a;
+        padding: 1.6rem 1.8rem;
+        border-radius: 22px;
+        box-shadow: 0 6px 25px rgba(255, 107, 107, 0.35);
+        line-height: 1.9;
+        font-size: 1.05rem;
+        margin-top: 1rem;
+        text-align: justify;
+        letter-spacing: 0.25px;
+        overflow: hidden;
+    }
+    /* 🌀 Subtle Ashoka Chakra watermark */
+    
+    .message-bot .preamble::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 160px;
+        height: 160px;
+        transform: translate(-50%, -50%);
+        background: url('https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg') no-repeat center;
+        background-size: contain;
+        opacity: 0.07;
+        filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.1));
+        pointer-events: none;
+    }
+    /* 🌤 Soft sunlight shimmer */
+    
+    @keyframes preambleSoftGlow {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    /* 🌄 Smooth fade-in animation */
+    
+    @keyframes fadeInUpPreamble {
+        0% {
+            opacity: 0;
+            transform: translateY(25px) scale(0.98);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    /* 🔸 Title and Emphasis */
+    
+    .message-bot .preamble strong {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: #ff6b35;
+        text-shadow: 0 2px 6px rgba(255, 107, 107, 0.2);
+    }
+    
+    .message-bot .preamble em {
+        display: block;
+        margin-top: 0.8rem;
+        font-style: normal;
+        color: #111;
+        opacity: 0.95;
+        line-height: 1.9;
+    }
+    /* 🪷 Mobile Adjustments */
+    
+    @media (max-width: 768px) {
+        .message-bot .preamble {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            padding: 1.2rem 1.3rem;
+        }
+        .message-bot .preamble::before {
+            width: 110px;
+            height: 110px;
+            opacity: 0.08;
+        }
+    }
+    /* =====================================================
+   🇮🇳 PREAMBLE CARD – With Rotating Ashoka Chakra
+   Designed by Keerthishree ✨
+===================================================== */
+    
+    .message-bot .preamble {
+        position: relative;
+        background: linear-gradient(135deg, #fff8ef, #ffe9d6, #ffd7ba);
+        background-size: 200% 200%;
+        animation: fadeInUpPreamble 1.2s ease-out, preambleSoftGlow 10s ease-in-out infinite;
+        color: #1a1a1a;
+        padding: 1.6rem 1.8rem;
+        border-radius: 22px;
+        box-shadow: 0 6px 25px rgba(255, 107, 107, 0.35);
+        line-height: 1.9;
+        font-size: 1.05rem;
+        margin-top: 1rem;
+        text-align: justify;
+        letter-spacing: 0.25px;
+        overflow: hidden;
+    }
+    /* 🌀 Rotating Ashoka Chakra watermark */
+    
+    .message-bot .preamble::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 160px;
+        height: 160px;
+        transform: translate(-50%, -50%);
+        background: url('https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg') no-repeat center;
+        background-size: contain;
+        opacity: 0.07;
+        filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.1));
+        pointer-events: none;
+        animation: chakraRotate 40s linear infinite;
+        /* 🌀 Slow divine spin */
+    }
+    
+    @keyframes chakraRotate {
+        from {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+        to {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+    /* 🌤 Soft sunlight shimmer */
+    
+    @keyframes preambleSoftGlow {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    /* 🌄 Smooth fade-in animation */
+    
+    @keyframes fadeInUpPreamble {
+        0% {
+            opacity: 0;
+            transform: translateY(25px) scale(0.98);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    /* 🔸 Title and Emphasis */
+    
+    .message-bot .preamble strong {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: #ff6b35;
+        text-shadow: 0 2px 6px rgba(255, 107, 107, 0.2);
+    }
+    
+    .message-bot .preamble em {
+        display: block;
+        margin-top: 0.8rem;
+        font-style: normal;
+        color: #111;
+        opacity: 0.95;
+        line-height: 1.9;
+    }
+    /* 🪷 Mobile Adjustments */
+    
+    @media (max-width: 768px) {
+        .message-bot .preamble {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            padding: 1.2rem 1.3rem;
+        }
+        .message-bot .preamble::before {
+            width: 110px;
+            height: 110px;
+            opacity: 0.08;
+        }
+    }
+    /* =====================================================
+   🌅 VIDHA 2.7 – UI & Animation Enhancements
+   Created by Keerthishree ✨ Styled with Sunny
+===================================================== */
+    /* 💬 Smooth message fade-in + bounce */
+    
+    .message {
+        animation: fadeInUp 0.6s ease forwards;
+        transform-origin: bottom;
+    }
+    
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(15px) scale(0.98);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    /* 🌈 Animated Header Gradient Line */
+    
+    header::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(270deg, #FF9933, #FFFFFF, #138808, #FF9933);
+        background-size: 600% 600%;
+        animation: flowGradient 8s ease infinite;
+        border-radius: 2px;
+    }
+    
+    @keyframes flowGradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    /* 🎨 Explore Topics Dropdown Glow */
+    
+    .dropdown-select:focus,
+    .dropdown-select:hover {
+        border-color: #ff6b6b;
+        box-shadow: 0 0 12px rgba(255, 107, 107, 0.5), 0 0 20px rgba(255, 159, 67, 0.3);
+        transform: translateY(-1px);
+    }
+    /* ☀️ Button pulse effect */
+    
+    .btn-sunset {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .btn-sunset::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+        transition: all 0.4s ease;
+    }
+    
+    .btn-sunset:hover::after {
+        left: 100%;
+    }
+    
+    .btn-sunset.pulse {
+        animation: pulseGlow 1.8s infinite ease-in-out;
+    }
+    
+    @keyframes pulseGlow {
+        0%,
+        100% {
+            box-shadow: 0 0 10px rgba(255, 107, 107, 0.4);
+        }
+        50% {
+            box-shadow: 0 0 18px rgba(255, 159, 67, 0.6);
+        }
+    }
+    /* 🇮🇳 Flag Heartbeat Glow */
+    
+    .flag-round {
+        animation: flagHeartbeat 2.5s infinite ease-in-out;
+    }
+    
+    @keyframes flagHeartbeat {
+        0%,
+        100% {
+            box-shadow: 0 0 8px rgba(255, 107, 107, 0.3);
+            transform: scale(1);
+        }
+        50% {
+            box-shadow: 0 0 22px rgba(254, 202, 87, 0.5);
+            transform: scale(1.05);
+        }
+    }
+    /* 🪶 Smooth chat fade on load */
+    
+    #chat-area {
+        animation: chatAppear 1.5s ease forwards;
+        opacity: 0;
+    }
+    
+    @keyframes chatAppear {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /* 🌙 Dark Mode Fixes for New Effects */
+    
+    .dark-mode header::after {
+        background: linear-gradient(270deg, #FF6B6B, #FECA57, #FF9F43, #FF6B6B);
+    }
+    /* =====================================================
+   🇮🇳 VIDHA 2.8 – Flag Rotation + Text Wave Animation
+   Designed by Keerthishree 🌸
+===================================================== */
+    /* 🌀 Smooth Rotating Flag Animation */
+    
+    .flag-round {
+        animation: flagSpin 12s linear infinite;
+        transform-origin: center center;
+    }
+    
+    @keyframes flagSpin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    /* 🌊 Gentle Letter Wave for “VIDHA” */
+    
+    header h1 {
+        display: inline-block;
+        font-weight: 900;
+        letter-spacing: 2px;
+        background: linear-gradient(135deg, #ff6b6b, #feca57);
+        -webkit-text-fill-color: transparent;
+        animation: waveLetters 3s ease-in-out infinite;
+    }
+    
+    @keyframes waveLetters {
+        0%,
+        100% {
+            transform: translateY(0);
+            text-shadow: 0 2px 10px rgba(255, 107, 107, 0.4);
+        }
+        50% {
+            transform: translateY(-4px);
+            text-shadow: 0 3px 14px rgba(254, 202, 87, 0.6);
+        }
+    }
+    /* Make each letter flow slightly offset for natural wave effect */
+    
+    header h1 span {
+        display: inline-block;
+        animation: letterFloat 2s ease-in-out infinite;
+    }
+    
+    @keyframes letterFloat {
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-3px);
+        }
+    }
+    /* Subtle phase difference per letter */
+    
+    header h1 span:nth-child(1) {
+        animation-delay: 0s;
+    }
+    
+    header h1 span:nth-child(2) {
+        animation-delay: 0.1s;
+    }
+    
+    header h1 span:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+    
+    header h1 span:nth-child(4) {
+        animation-delay: 0.3s;
+    }
+    
+    header h1 span:nth-child(5) {
+        animation-delay: 0.4s;
+    }
+    /* =====================================================
+   🌞 VIDHA 2.9 — Elegant Text Glow (No Background Box)
+   Developed by Keerthishree 🌸
+===================================================== */
+    /* 🌊 Soft Wave Animation for VIDHA Text */
+    
+    header h1 {
+        /* 🌸 Simple & Visible VIDHA Title */
+        header h1 {
+            display: inline-block;
+            font-weight: 900;
+            font-size: 2.4rem;
+            color: #ff6b6b;
+            /* Beautiful sunset coral tone */
+            letter-spacing: 2px;
+            text-shadow: none;
+            transform: none;
+            animation: none;
+        }
+    }
+    /* ✨ Gentle floating wave movement */
+    
+    @keyframes vidhaWave {
+        0%,
+        100% {
+            transform: translateY(0);
+            letter-spacing: 3px;
+            filter: brightness(1);
+        }
+        50% {
+            transform: translateY(-3px);
+            letter-spacing: 3.5px;
+            filter: brightness(1.2);
+        }
+    }
+    /* 🌈 Make each letter subtly float individually */
+    
+    header h1 span {
+        header h1 span {
+            display: inline-block;
+            color: #ff6b6b;
+            animation: none;
+            transform: none;
+            opacity: 1;
+        }
+    }
+    
+    @keyframes letterGlow {
+        0%,
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        50% {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+    }
+    
+    header h1 span:nth-child(1) {
+        animation-delay: 0s;
+    }
+    
+    header h1 span:nth-child(2) {
+        animation-delay: 0.15s;
+    }
+    
+    header h1 span:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+    
+    header h1 span:nth-child(4) {
+        animation-delay: 0.45s;
+    }
+    
+    header h1 span:nth-child(5) {
+        animation-delay: 0.6s;
+    }
+    /* 🌙 Dark Mode – Keep VIDHA Visible & Glowing */
+    
+    .dark-mode header h1 {
+        background: linear-gradient(135deg, #ff9f43, #ff6b6b, #feca57);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0 2px 12px rgba(255, 159, 67, 0.6), 0 0 20px rgba(255, 107, 107, 0.5);
+    }
+    
+    .dark-mode header h1,
+    .dark-mode header h1 span {
+        color: #feca57;
+        /* warm yellow for visibility */
+    }
+    /* 🚨 Final Fix — Make VIDHA Clearly Visible (No Gradient, No Blur, No Animation) */
+    
+    header h1,
+    header h1 span {
+        color: #ff6b6b !important;
+        /* bright visible coral */
+        background: none !important;
+        /* remove gradient or clip */
+        text-shadow: none !important;
+        animation: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+    /* 🌙 Dark Mode — Keep VIDHA Visible and Elegant */
+    
+    .dark-mode header h1,
+    .dark-mode header h1 span {
+        color: #ffffff !important;
+        /* pure white for contrast */
+        -webkit-text-fill-color: #ffffff !important;
+        background: none !important;
+        text-shadow: 0 1px 4px rgba(255, 255, 255, 0.25) !important;
+    }
+    
+    header h1,
+    header h1 span {
+        color: #ff6b6b !important;
+        background: none !important;
+        text-shadow: none !important;
+        animation: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+    
+    .dark-mode header h1,
+    .dark-mode header h1 span {
+        color: #ffffff !important;
+        background: none !important;
+        text-shadow: 0 1px 4px rgba(255, 255, 255, 0.25) !important;
+    }
+    /* Final safe override — VIDHA visible, no gradient, no animation, linter-friendly */
+    
+    header h1,
+    header h1 span {
+        color: #ff6b6b !important;
+        /* visible coral in light mode */
+        background: none !important;
+        /* remove gradients */
+        background-image: none !important;
+        -webkit-text-fill-color: initial !important;
+        /* safe fallback, non-problematic */
+        text-shadow: none !important;
+        animation: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+    /* Dark mode: pure white for contrast */
+    
+    .dark-mode header h1,
+    .dark-mode header h1 span {
+        color: #ffffff !important;
+        background: none !important;
+        background-image: none !important;
+        -webkit-text-fill-color: initial !important;
+        text-shadow: 0 1px 4px rgba(255, 255, 255, 0.25) !important;
+    }
+    /* =====================================================
+   🌸 FINAL SAFE FIX — VIDHA Visible + Smooth Fade-in
+   No warnings, no blur, no vendor prefixes 🚀
+===================================================== */
+    /* ✨ Make VIDHA text clear and solid */
+    
+    header h1,
+    header h1 span {
+        color: #ff6b6b !important;
+        /* coral color in light mode */
+        background: none !important;
+        /* remove gradient */
+        background-image: none !important;
+        text-shadow: none !important;
+        animation: vidhaFadeIn 1.2s ease-out forwards !important;
+        transform: none !important;
+        opacity: 0;
+    }
+    /* 🌙 Dark mode version — bright white and clean */
+    
+    .dark-mode header h1,
+    .dark-mode header h1 span {
+        color: #ffffff !important;
+        background: none !important;
+        background-image: none !important;
+        text-shadow: 0 1px 4px rgba(255, 255, 255, 0.25) !important;
+        animation: vidhaFadeIn 1.2s ease-out forwards !important;
+        opacity: 0;
+    }
+    /* 🌊 Smooth fade-in animation */
+    
+    @keyframes vidhaFadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(8px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /* 🌅 PREAMBLE BACKGROUND — Setting Sun Gradient */
+    
+    .message-bot.preamble {
+        background: linear-gradient(135deg, #ff9f43, #ff6b6b);
+        color: #fff;
+        padding: 1.6rem 1.8rem;
+        border-radius: 20px;
+        box-shadow: 0 6px 25px rgba(255, 107, 107, 0.45);
+        line-height: 1.9;
+        font-size: 1.05rem;
+        text-align: justify;
+        letter-spacing: 0.25px;
+        position: relative;
+        overflow: hidden;
+        animation: fadeInUpPreamble 1s ease-out;
+    }
+    /* 🌀 Subtle rotating Ashoka Chakra watermark */
+    
+    .message-bot.preamble::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 150px;
+        height: 150px;
+        transform: translate(-50%, -50%);
+        background: url('https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg') no-repeat center;
+        background-size: contain;
+        opacity: 0.08;
+        animation: chakraRotate 50s linear infinite;
+        pointer-events: none;
+    }
+    
+    @keyframes chakraRotate {
+        from {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+        to {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+    
+    @keyframes fadeInUpPreamble {
+        0% {
+            opacity: 0;
+            transform: translateY(25px) scale(0.98);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    
+    .quiz-question {
+        margin-top: 10px;
+    }
+    
+    .quiz-option {
+        display: block;
+        width: 100%;
+        margin: 6px 0;
+        padding: 8px 12px;
+        background: #f4f4f4;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: left;
+        transition: all 0.2s ease;
+    }
+    
+    .quiz-option:hover:not(:disabled) {
+        background: #e8f0fe;
+    }
+    
+    .quiz-option.correct {
+        background-color: #c8f7c5;
+        border-color: #28a745;
+        color: #155724;
+    }
+    
+    .quiz-option.wrong {
+        background-color: #f8d7da;
+        border-color: #dc3545;
+        color: #721c24;
+    }
+    
+    .quiz-option:disabled {
+        cursor: not-allowed;
+        opacity: 0.8;
+    }
+    
+    .quiz-explanation {
+        margin-top: 8px;
+        font-size: 0.9rem;
+        color: #444;
+    }
+    
+    .quiz-question {
+        margin-top: 12px;
+    }
+    
+    .question {
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    
+    .quiz-option {
+        display: block;
+        width: 100%;
+        margin: 6px 0;
+        padding: 10px 14px;
+        background: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: left;
+        transition: all 0.25s ease;
+    }
+    
+    .quiz-option:hover:not(:disabled) {
+        background: #e8f0fe;
+        transform: scale(1.01);
+    }
+    
+    .quiz-option.correct {
+        background-color: #d4edda;
+        border-color: #28a745;
+        color: #155724;
+    }
+    
+    .quiz-option.wrong {
+        background-color: #f8d7da;
+        border-color: #dc3545;
+        color: #721c24;
+    }
+    
+    .quiz-option:disabled {
+        cursor: not-allowed;
+        opacity: 0.8;
+    }
+    
+    .quiz-explanation {
+        margin-top: 8px;
+        font-size: 0.9rem;
+        color: #333;
+        background: #fffaf0;
+        border-left: 4px solid #f9a825;
+        padding: 6px 10px;
+        border-radius: 6px;
+    }
+    
+    .final-score {
+        text-align: center;
+        padding: 14px;
+        background: #f4f6fa;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+    
+    .final-score h3 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    
+    .play-again-btn {
+        margin-top: 10px;
+        padding: 10px 16px;
+        font-size: 1rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    
+    .play-again-btn:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+    /* 🌸 FINAL — Make header fill space and look bold */
+    
+    header.flex-between.container {
+        padding: 1.5rem 1rem !important;
+        /* taller header for balance */
+        align-items: center !important;
+    }
+    /* 🟧 Make VIDHA text big and eye-catching */
+    
+    header h1.text-gradient {
+        font-size: 3rem !important;
+        /* big, bold VIDHA letters */
+        line-height: 1.2 !important;
+        letter-spacing: 0.15rem !important;
+        display: flex !important;
+        align-items: baseline !important;
+        gap: 0.12rem !important;
+    }
+    
+    header h1.text-gradient span {
+        font-size: 2.5rem !important;
+        /* match all letters */
+        font-weight: 800 !important;
+        letter-spacing: 0.18rem !important;
+        color: #e85c33 !important;
+    }
+    /* ✨ Subtitle: make it stand out, not tiny */
+    
+    header h3 {
+        font-size: 1.20rem !important;
+        font-weight: 500 !important;
+        padding-left: 0.5rem !important;
+        letter-spacing: 0.6px !important;
+        color: #222 !important;
+        margin: 0 !important;
+    }
+    /* 🇮🇳 Make flag slightly larger to match text height */
+    
+    header img.flag-round {
+        width: 56px !important;
+        height: 56px !important;
+        border-radius: 50%;
+    }
+    /* 📘 Expand dropdown and buttons to balance visually */
+    
+    .dropdown-select {
+        font-size: 0.9rem !important;
+        padding: 0.4rem 0.6rem !important;
+        min-width: 115px !important;
+        max-width: 165px !important;
+    }
+    /* 🔘 Make control buttons feel substantial */
+    
+    .btn.btn-sunset.btn-sm {
+        width: 38px !important;
+        height: 36px !important;
+        font-size: 1.2rem !important;
+        padding: 0 !important;
+    }
+    /* 🧭 Keep header layout in single line */
+    
+    header .flex-center.gap-md:first-child {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        flex-wrap: nowrap !important;
+        gap: 0.7rem !important;
+        white-space: nowrap !important;
+    }
+    /* 📱 Responsive scaling for smaller screens */
+    
+    @media (max-width: 1024px) {
+        header h1.text-gradient,
+        header h1.text-gradient span {
+            font-size: 1.6rem !important;
+            letter-spacing: 0.1rem !important;
+        }
+        header h3 {
+            font-size: 1.1rem !important;
+        }
+        header img.flag-round {
+            width: 48px !important;
+            height: 48px !important;
+        }
+        .btn.btn-sunset.btn-sm {
+            width: 32px !important;
+            height: 32px !important;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        header.flex-between.container {
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+        header .flex-center.gap-md:first-child {
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+        header h1.text-gradient,
+        header h1.text-gradient span {
+            font-size: 1.5rem !important;
+        }
+        header h3 {
+            font-size: 1rem !important;
+        }
+    }
+    /* 🌅 Sunset gradient for VIDHA letters */
+    /* =====================================================
+   ✅ Minimal working floating wave for VIDHA
+===================================================== */
+    
+    header h1.text-gradient {
+        display: flex;
+        gap: 0.15rem;
+        font-size: 2rem;
+        font-weight: 900;
+        letter-spacing: 0.15rem;
+        line-height: 1;
+    }
+    /* make sure every letter can move independently */
+    
+    header h1.text-gradient span {
+        display: inline-block;
+        background: linear-gradient(135deg, #ff9933, #ff6b6b, #ffcc70);
+        background-size: 200% 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        animation: floatWave 5s ease-in-out infinite, gradientShift 15s linear infinite;
+        will-change: transform;
+    }
+    /* up-down motion */
+    
+    @keyframes floatWave {
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+        25% {
+            transform: translateY(-5px);
+        }
+        50% {
+            transform: translateY(3px);
+        }
+        75% {
+            transform: translateY(-2px);
+        }
+    }
+    /* slow color shift */
+    
+    @keyframes gradientShift {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    /* delay each letter so they wave in sequence */
+    
+    header h1.text-gradient span:nth-child(1) {
+        animation-delay: 0s, 0s;
+    }
+    
+    header h1.text-gradient span:nth-child(2) {
+        animation-delay: 0.3s, 0s;
+    }
+    
+    header h1.text-gradient span:nth-child(3) {
+        animation-delay: 0.6s, 0s;
+    }
+    
+    header h1.text-gradient span:nth-child(4) {
+        animation-delay: 0.9s, 0s;
+    }
+    
+    header h1.text-gradient span:nth-child(5) {
+        animation-delay: 1.2s, 0s;
+    }
+    /* 🌊 Slow, smooth wave motion */
+    
+    @keyframes slowWave {
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+        25% {
+            transform: translateY(-4px);
+        }
+        50% {
+            transform: translateY(2px);
+        }
+        75% {
+            transform: translateY(-2px);
+        }
+    }
+    /* 🕊️ Subtle delay per letter for natural flowing rhythm */
+    
+    header h1.text-gradient span:nth-child(1) {
+        animation-delay: 0s;
+    }
+    
+    header h1.text-gradient span:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    
+    header h1.text-gradient span:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+    
+    header h1.text-gradient span:nth-child(4) {
+        animation-delay: 0.6s;
+    }
+    
+    header h1.text-gradient span:nth-child(5) {
+        animation-delay: 0.8s;
+    }
+    /* 📱 Slightly smaller on mobile but keep animation smooth */
+    
+    @media (max-width: 768px) {
+        header h1.text-gradient span {
+            font-size: 1.5rem;
+            animation: slowWave 5.2s ease-in-out infinite;
+        }
+    }
+    /* 🌗 Ensure subtitle is visible in both light and dark modes */
+    
+    header h3 {
+        color: #222 !important;
+        /* Default dark text for light mode */
+        transition: color 0.3s ease;
+    }
+    /* 🌙 Auto-adjust color in dark mode */
+    
+    body.dark-mode header h3 {
+        color: #f5f5f5 !important;
+        /* Soft white for dark mode */
+    }
+    
+    .play-again-btn {
+        background: linear-gradient(135deg, #ff9933, #ff6b6b);
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 0.6rem;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+    }
+    
+    .play-again-btn:hover {
+        background: linear-gradient(135deg, #ff6b6b, #ff9933);
+        transform: scale(1.05);
+    }
+    
+    .play-again-btn {
+        background: linear-gradient(135deg, #ff9933, #ff6b6b);
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 0.6rem;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+    }
+    
+    .play-again-btn:hover {
+        background: linear-gradient(135deg, #ff6b6b, #ff9933);
+        transform: scale(1.05);
+    }
+    
+    .flag-round {
+        animation: none !important;
+        transform: none !important;
+    }
+    /* CHAT AREA BACKGROUND — LIGHT MODE */
+    
+    #chat-area {
+        background: url("flag\(light\).png") center/contain no-repeat;
+        background-color: rgba(255, 255, 255, 1);
+        /* keep white card look */
+        position: relative;
+    }
+    /* CHAT AREA BACKGROUND — DARK MODE */
+    
+    body.dark-mode #chat-area {
+        background: url("flag\(dark\).png") center/contain no-repeat;
+        background-color: rgba(0, 0, 0, 1);
+        /* dark frosted look */
+        background-blend-mode: lighten;
+    }

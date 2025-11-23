@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDHA – Constitution Awareness Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+</head>
+
+<body>
+    <!-- 🌈 Animated Decorative Blobs -->
+    <div class="blob blob-purple"></div>
+    <div class="blob blob-cyan"></div>
+    <div class="blob blob-pink"></div>
+
+    <!-- 🇮🇳 HEADER -->
+    <header class="flex-between container" style="padding: 1rem 0;">
+        <div class="flex-center gap-md">
+            <!-- 🌕 Circular Flag -->
+            <img src="rrlogo.jpeg" width="40" alt="Flag" class="flag-round">
+            <h1 class="text-gradient">
+                <span>V</span><span>I</span><span>D</span><span>H</span><span>A</span>
+            </h1>
+
+            <h3>Constitution Awareness Bot</h3>
+        </div>
+
+        <!-- 🔘 BUTTONS + DROPDOWN -->
+        <div class="flex-center gap-md">
+            <!-- Explore Topics Dropdown -->
+            <div class="dropdown">
+                <label for="topics" class="dropdown-label"></label>
+                <select id="topics" name="topics" class="dropdown-select">
+                    <option value="">📚 Explore Topics</option>
+                    <option value="preamble">Preamble</option>
+                    <option value="fundamental rights">Fundamental Rights</option>
+                    <option value="fundamental duties">Fundamental Duties</option>
+                           
+                </select>
+            </div>
+
+            <!-- Quiz Button -->
+            <button id="quizBtn" class="btn btn-sunset btn-sm" title="Quiz">🧠</button>
+
+            <!-- Theme and Anthem -->
+            <button id="themeToggle" class="btn btn-sunset btn-sm" title="Modes[Light/Dark]">🌙</button>
+            <button id="anthemToggle" class="btn btn-sunset btn-sm" title="Audio">🔊</button>
+        </div>
+    </header>
+
+    <!-- 💬 CHAT AREA -->
+    <main class="container" style="margin-top: 1.5rem;">
+        <div id="chat-area" class="card card-glass" style="height: 60vh; overflow-y:auto;">
+            <div id="chat-area" class="card card-glass">
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 🖊️ INPUT AREA -->
+    <div class="container flex-between gap-md" style="margin-top: 1rem;">
+        <input type="text" id="user-input" placeholder="Ask VIDHA about the Indian Constitution..." />
+        <div class="flex-center gap-sm">
+            <button id="voiceBtn" class="btn btn-sunset btn-sm" title="Voice Input 🎤">🎤</button>
+            <button id="send-btn" class="btn btn-sunset">Send</button>
+        </div>
+    </div>
+
+    <footer class="text-center" style="margin-top: 1.5rem;">
+        <p>Developed with pride and respect for the Constitution of INDIA – by Keerthishree D, 5th Sem BCA Dept-RRIMS</p>
+    </footer>
+
+
+    <audio id="anthem" src="vandhe_matharam.mp3" loop></audio>
+    <script src="script.js"></script>
+
+    <!-- 🎤 Voice Recognition Script -->
+    <script>
+        if ("webkitSpeechRecognition" in window) {
+            const recognition = new webkitSpeechRecognition();
+            recognition.continuous = false;
+            recognition.interimResults = false;
+            recognition.lang = "en-IN";
+
+            voiceBtn.addEventListener("click", () => {
+                recognition.start();
+                voiceBtn.textContent = "🎙️"; // listening
+                voiceBtn.classList.add("listening");
+            });
+
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                userInput.value = transcript;
+                voiceBtn.textContent = "🎤";
+                voiceBtn.classList.remove("listening");
+            };
+
+            recognition.onerror = () => {
+                voiceBtn.textContent = "🎤";
+                voiceBtn.classList.remove("listening");
+                alert("Voice recognition error. Please try again!");
+            };
+        } else {
+            voiceBtn.style.display = "none";
+            console.warn("Speech recognition not supported in this browser.");
+        }
+    </script>
+</body>
+
+</html>

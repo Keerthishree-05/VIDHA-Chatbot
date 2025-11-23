@@ -1,0 +1,892 @@
+[{
+        "category": "Preamble",
+        "question": "Who is known as the Father of the Indian Constitution?",
+        "options": ["Mahatma Gandhi", "Dr. B.R. Ambedkar", "Jawaharlal Nehru", "Sardar Patel"],
+        "correct": 1,
+        "explanation": "Dr. B.R. Ambedkar was the Chairman of the Drafting Committee and the principal architect of the Indian Constitution."
+    },
+    {
+        "category": "Preamble",
+        "question": "What are the key ideals mentioned in the Preamble?",
+        "options": ["Liberty, Equality, Justice, Fraternity", "Peace, Progress, Unity, Power", "Strength, Freedom, Democracy, Faith", "Equality, Faith, Progress, Justice"],
+        "correct": 0,
+        "explanation": "The Preamble emphasizes Liberty, Equality, Justice, and Fraternity as the guiding ideals of the Constitution."
+    },
+    {
+        "category": "Preamble",
+        "question": "Which date marks the adoption of the Constitution?",
+        "options": ["15th August 1947", "26th January 1950", "26th November 1949", "2nd October 1950"],
+        "correct": 2,
+        "explanation": "The Constitution was adopted on 26th November 1949 and came into effect on 26th January 1950."
+    },
+    {
+        "category": "Fundamental Rights",
+        "question": "Which Article guarantees the Right to Equality?",
+        "options": ["Article 14", "Article 19", "Article 21", "Article 32"],
+        "correct": 0,
+        "explanation": "Article 14 ensures equality before the law and equal protection of laws to all persons in India."
+    },
+    {
+        "category": "Fundamental Rights",
+        "question": "Which Article protects the Right to Freedom of Speech?",
+        "options": ["Article 15", "Article 19(1)(a)", "Article 21", "Article 25"],
+        "correct": 1,
+        "explanation": "Article 19(1)(a) grants every citizen the right to freedom of speech and expression."
+    },
+    {
+        "category": "Fundamental Rights",
+        "question": "Article 21 deals with which fundamental right?",
+        "options": ["Freedom of Religion", "Equality before Law", "Protection of Life and Personal Liberty", "Right to Education"],
+        "correct": 2,
+        "explanation": "Article 21 guarantees protection of life and personal liberty — it has been expansively interpreted by the Supreme Court."
+    },
+    {
+        "category": "Fundamental Rights",
+        "question": "Which Article is known as the 'Heart and Soul' of the Constitution?",
+        "options": ["Article 19", "Article 32", "Article 51A", "Article 370"],
+        "correct": 1,
+        "explanation": "Dr. Ambedkar described Article 32 — the Right to Constitutional Remedies — as the 'Heart and Soul' of the Constitution."
+    },
+    {
+        "category": "Directive Principles",
+        "question": "Directive Principles of State Policy are contained in which Part of the Constitution?",
+        "options": ["Part II", "Part III", "Part IV", "Part V"],
+        "correct": 2,
+        "explanation": "DPSPs are in Part IV (Articles 36–51) and guide the State to ensure social and economic justice."
+    },
+    {
+        "category": "Directive Principles",
+        "question": "Which Constitution inspired India’s Directive Principles?",
+        "options": ["Irish Constitution", "US Constitution", "UK Constitution", "French Constitution"],
+        "correct": 0,
+        "explanation": "Directive Principles were influenced by the Irish Constitution’s concept of social policy guidelines."
+    },
+    {
+        "category": "Directive Principles",
+        "question": "Which Article directs the State to provide free legal aid?",
+        "options": ["Article 41", "Article 43", "Article 39A", "Article 48"],
+        "correct": 2,
+        "explanation": "Article 39A directs the State to promote justice on the basis of equal opportunity and provide free legal aid."
+    },
+    {
+        "category": "Fundamental Duties",
+        "question": "Fundamental Duties were added by which Amendment?",
+        "options": ["42nd Amendment, 1976", "44th Amendment, 1978", "52nd Amendment, 1985", "86th Amendment, 2002"],
+        "correct": 0,
+        "explanation": "Fundamental Duties were inserted in Article 51A by the 42nd Constitutional Amendment in 1976."
+    },
+    {
+        "category": "Fundamental Duties",
+        "question": "Which of the following is a Fundamental Duty?",
+        "options": ["Right to Property", "To respect the National Flag", "To vote in elections", "To demand justice"],
+        "correct": 1,
+        "explanation": "Respecting the National Flag and National Anthem is one of the 11 Fundamental Duties in Article 51A."
+    },
+    {
+        "category": "Articles & Amendments",
+        "question": "Which Article deals with the Amendment procedure?",
+        "options": ["Article 360", "Article 368", "Article 370", "Article 371"],
+        "correct": 1,
+        "explanation": "Article 368 provides the procedure for amending the Constitution of India."
+    },
+    {
+        "category": "Articles & Amendments",
+        "question": "Which Amendment gave Constitutional status to Panchayati Raj?",
+        "options": ["42nd Amendment", "44th Amendment", "73rd Amendment", "74th Amendment"],
+        "correct": 2,
+        "explanation": "The 73rd Amendment (1992) provided constitutional status to Panchayati Raj Institutions."
+    },
+    {
+        "category": "Articles & Amendments",
+        "question": "Which Article is related to the proclamation of National Emergency?",
+        "options": ["Article 352", "Article 356", "Article 360", "Article 370"],
+        "correct": 0,
+        "explanation": "Article 352 empowers the President to proclaim a National Emergency due to war, external aggression, or armed rebellion."
+    },
+    {
+        "category": "Judiciary",
+        "question": "Which Article establishes the Supreme Court?",
+        "options": ["Article 124", "Article 214", "Article 131", "Article 136"],
+        "correct": 0,
+        "explanation": "Article 124 of the Constitution establishes the Supreme Court of India."
+    },
+    {
+        "category": "Judiciary",
+        "question": "Who appoints the judges of the Supreme Court?",
+        "options": ["Prime Minister", "President", "Chief Justice of India", "Parliament"],
+        "correct": 1,
+        "explanation": "The President of India appoints the judges of the Supreme Court after consultation as prescribed by law."
+    },
+    {
+        "category": "Judiciary",
+        "question": "What is Judicial Review?",
+        "options": ["Reviewing Parliament laws", "Court’s power to examine constitutionality of laws", "Executive monitoring", "Repealing amendments"],
+        "correct": 1,
+        "explanation": "Judicial Review means the power of courts to determine whether laws or executive actions violate the Constitution."
+    },
+    {
+        "category": "Constitution Day",
+        "question": "When is Constitution Day celebrated?",
+        "options": ["15th August", "26th January", "26th November", "2nd October"],
+        "correct": 2,
+        "explanation": "Constitution Day, also called Samvidhan Divas, is celebrated on 26th November every year."
+    },
+    {
+        "category": "Constitution Day",
+        "question": "What does Constitution Day commemorate?",
+        "options": ["India became independent", "Constitution was adopted", "Republic was declared", "India joined UN"],
+        "correct": 1,
+        "explanation": "Constitution Day marks the adoption of the Constitution by the Constituent Assembly on 26 November 1949."
+    },
+    {
+        "category": "Constitution Day",
+        "question": "What are common Constitution Day activities?",
+        "options": ["Sports meets", "Preamble reading and quiz programs", "Festivals", "Political rallies"],
+        "correct": 1,
+        "explanation": "Typical programs include Preamble reading, awareness workshops, debates, and quiz competitions."
+    },
+    {
+        "category": "Miscellaneous",
+        "question": "Which country’s constitution influenced India’s Fundamental Rights?",
+        "options": ["Ireland", "USA", "UK", "France"],
+        "correct": 1,
+        "explanation": "The Fundamental Rights in the Indian Constitution were influenced by the U.S. Bill of Rights."
+    },
+    {
+        "category": "Miscellaneous",
+        "question": "Which part of the Constitution deals with citizenship?",
+        "options": ["Part I", "Part II", "Part III", "Part IV"],
+        "correct": 1,
+        "explanation": "Part II (Articles 5–11) of the Constitution deals with citizenship."
+    },
+    {
+        "category": "Miscellaneous",
+        "question": "Who was the first President of India?",
+        "options": ["Dr. B.R. Ambedkar", "Dr. Rajendra Prasad", "C. Rajagopalachari", "Jawaharlal Nehru"],
+        "correct": 1,
+        "explanation": "Dr. Rajendra Prasad was the first President of independent India."
+    },
+    {
+        "category": "Miscellaneous",
+        "question": "Which of the following is NOT a Fundamental Right?",
+        "options": ["Right to Equality", "Right to Freedom", "Right to Property", "Right to Constitutional Remedies"],
+        "correct": 2,
+        "explanation": "The Right to Property was removed from Fundamental Rights by the 44th Amendment and made a legal right."
+    },
+    {
+        "category": "Miscellaneous",
+        "question": "What does 'Secular' mean in the Preamble?",
+        "options": ["No religion in India", "Freedom to practice any religion", "One state religion", "Religious restrictions"],
+        "correct": 1,
+        "explanation": "Secularism means the State has no official religion and citizens are free to practice, propagate, and profess any faith."
+    },
+    {
+        "category": "Constitution (Advanced)",
+        "question": "Which of the following best explains the doctrine of 'Basic Structure' upheld by the Supreme Court?",
+        "options": [
+            "Parliament cannot amend any part of the Constitution",
+            "Parliament can amend the Constitution but cannot alter its essential features",
+            "Supreme Court can rewrite parts of the Constitution",
+            "Fundamental Rights cannot be amended under any circumstances"
+        ],
+        "correct": 1,
+        "explanation": "The Basic Structure Doctrine, evolved in Kesavananda Bharati case (1973), restricts Parliament from altering the Constitution’s essential features."
+    },
+
+    {
+        "category": "Judiciary",
+        "question": "In which case did the Supreme Court rule that judicial review is part of the basic structure?",
+        "options": [
+            "Minerva Mills v. Union of India",
+            "Golaknath v. State of Punjab",
+            "Shankari Prasad v. Union of India",
+            "ADM Jabalpur v. Shivkant Shukla"
+        ],
+        "correct": 0,
+        "explanation": "Minerva Mills (1980) reaffirmed judicial review as part of the Basic Structure."
+    },
+
+    {
+        "category": "Federalism",
+        "question": "Which of the following best reflects 'quasi-federalism' in India?",
+        "options": [
+            "Equal powers to Union and States",
+            "Strong Centre with limited State autonomy",
+            "Fully decentralized governance",
+            "States having exclusive financial independence"
+        ],
+        "correct": 1,
+        "explanation": "India is federal in structure but unitary in spirit due to strong central powers."
+    },
+
+    {
+        "category": "Fundamental Rights (Advanced)",
+        "question": "Which principle was emphasized by the Supreme Court in the 'Maneka Gandhi vs Union of India' judgment?",
+        "options": [
+            "Right to Property is not a Fundamental Right",
+            "Procedure established by law must be 'just, fair and reasonable'",
+            "Parliament’s power to amend FRs is absolute",
+            "Emergency cannot suspend Right to Life"
+        ],
+        "correct": 1,
+        "explanation": "Maneka Gandhi (1978) expanded Article 21 and linked FRs through the 'Golden Triangle' (Articles 14, 19, 21)."
+    },
+
+    {
+        "category": "DPSP (Advanced)",
+        "question": "Which constitutional principle creates a conflict between Fundamental Rights and Directive Principles?",
+        "options": [
+            "Judicial Review",
+            "Uniform Civil Code",
+            "Reasonable Restrictions",
+            "Separation of Powers"
+        ],
+        "correct": 1,
+        "explanation": "The UCC (Article 44) often conflicts with religious freedom under Article 25."
+    },
+
+    {
+        "category": "Emergency Powers",
+        "question": "During a National Emergency under Article 352, which Fundamental Right cannot be suspended?",
+        "options": [
+            "Article 19",
+            "Article 21",
+            "Article 32",
+            "Article 14"
+        ],
+        "correct": 1,
+        "explanation": "Supreme Court ruled that Article 21 cannot be suspended even during emergency."
+    },
+
+    {
+        "category": "Amendments",
+        "question": "Which constitutional amendment attempted to reduce the scope of judicial review but was struck down?",
+        "options": [
+            "24th Amendment",
+            "42nd Amendment (Section 4 & 55)",
+            "44th Amendment",
+            "52nd Amendment"
+        ],
+        "correct": 1,
+        "explanation": "The 42nd Amendment tried to limit judicial review but SC struck those clauses down."
+    },
+
+    {
+        "category": "Centre–State Relations",
+        "question": "Which Article gives Parliament authority to legislate on State subjects under 'national interest'?",
+        "options": [
+            "Article 249",
+            "Article 252",
+            "Article 253",
+            "Article 300A"
+        ],
+        "correct": 0,
+        "explanation": "Article 249 allows Parliament to legislate on State List during Rajya Sabha resolution of national interest."
+    },
+
+    {
+        "category": "Amendments (Advanced)",
+        "question": "The Supreme Court held that judicial review of constitutional amendments is allowed. This was established in:",
+        "options": [
+            "I.R. Coelho vs State of Tamil Nadu",
+            "Kesavananda Bharati vs State of Kerala",
+            "Ashoka Kumar Thakur vs Union of India",
+            "Puttaswamy vs Union of India"
+        ],
+        "correct": 1,
+        "explanation": "Kesavananda Bharati (1973) introduced Basic Structure Doctrine and allowed judicial review of amendments."
+    },
+
+    {
+        "category": "Fundamental Rights (Conceptual)",
+        "question": "Which combination of Articles forms the 'Golden Triangle' ensuring protection against arbitrary state action?",
+        "options": [
+            "Articles 19, 21, 32",
+            "Articles 14, 19, 21",
+            "Articles 21, 25, 51",
+            "Articles 32, 136, 226"
+        ],
+        "correct": 1,
+        "explanation": "Articles 14 (Equality), 19 (Freedom), 21 (Life) form the Golden Triangle."
+    },
+
+    {
+        "category": "Parliament (High Level)",
+        "question": "What is the primary constitutional reason for establishing Rajya Sabha?",
+        "options": [
+            "To give representation to rural areas",
+            "To provide continuity in the parliamentary system",
+            "To represent the interests of States in federal structure",
+            "To check the powers of the Prime Minister"
+        ],
+        "correct": 2,
+        "explanation": "Rajya Sabha represents the States, reflecting federalism."
+    },
+
+    {
+        "category": "Executive",
+        "question": "The real executive power in India is exercised by:",
+        "options": [
+            "President",
+            "Prime Minister and Council of Ministers",
+            "Chief Justice of India",
+            "Lok Sabha Speaker"
+        ],
+        "correct": 1,
+        "explanation": "President is nominal; PM + Council is the real executive authority."
+    },
+
+    {
+        "category": "Judiciary (Difficult)",
+        "question": "Which of the following is NOT part of the Basic Structure as per judicial interpretation?",
+        "options": [
+            "Judicial Review",
+            "Secularism",
+            "Freedom of Trade",
+            "Rule of Law"
+        ],
+        "correct": 2,
+        "explanation": "Freedom of Trade (Article 301) is not considered part of Basic Structure."
+    },
+
+    {
+        "category": "Constitutional Philosophy",
+        "question": "Which feature of the Constitution reflects the principle of 'limited government'?",
+        "options": [
+            "Fundamental Duties",
+            "Fundamental Rights",
+            "Directive Principles",
+            "Preamble"
+        ],
+        "correct": 1,
+        "explanation": "Fundamental Rights impose limits on State power, ensuring limited government."
+    },
+
+    {
+        "category": "Schedules",
+        "question": "Which Schedule contains powers, functions, and structure of Panchayats?",
+        "options": [
+            "7th Schedule",
+            "10th Schedule",
+            "11th Schedule",
+            "12th Schedule"
+        ],
+        "correct": 2,
+        "explanation": "11th Schedule lists functions of Panchayats (73rd Amendment)."
+    },
+
+    {
+        "category": "Elections",
+        "question": "Which body has the constitutional authority to supervise elections?",
+        "options": [
+            "Parliament",
+            "Election Commission of India",
+            "Supreme Court",
+            "NITI Aayog"
+        ],
+        "correct": 1,
+        "explanation": "Article 324 empowers the Election Commission to conduct elections."
+    },
+
+    {
+        "category": "Local Governance (Advanced)",
+        "question": "Which amendment made local self-government a constitutional mandate?",
+        "options": [
+            "42nd Amendment",
+            "73rd and 74th Amendments",
+            "52nd Amendment",
+            "86th Amendment"
+        ],
+        "correct": 1,
+        "explanation": "73rd (Panchayats) and 74th (Municipalities) gave constitutional status to local bodies."
+    },
+
+    {
+        "category": "Centre–State",
+        "question": "When can the President legislate on State subjects?",
+        "options": [
+            "When Lok Sabha passes a resolution",
+            "During National Emergency",
+            "During State Emergency",
+            "Only when Supreme Court recommends"
+        ],
+        "correct": 1,
+        "explanation": "During National Emergency, Centre can legislate on State List subjects."
+    },
+
+    {
+        "category": "Supreme Court Powers",
+        "question": "Which Article empowers Supreme Court to issue writs?",
+        "options": [
+            "Article 32",
+            "Article 226",
+            "Article 143",
+            "Article 139"
+        ],
+        "correct": 0,
+        "explanation": "Article 32 is itself a Fundamental Right — Right to Constitutional Remedies."
+    },
+
+    {
+        "category": "Fundamental Rights (Advanced)",
+        "question": "A law prevents people from staging peaceful protests within 5 km of government buildings. Which constitutional test will determine if this restriction is valid?",
+        "options": [
+            "Doctrine of Pith and Substance",
+            "Test of Reasonableness under Article 19(2)",
+            "Doctrine of Pleasure",
+            "Doctrine of Prospective Overruling"
+        ],
+        "correct": 1,
+        "explanation": "Restrictions on peaceful assembly fall under Article 19(3) and are tested for reasonableness."
+    }, {
+        "category": "Basic Structure",
+        "question": "Which feature was held NOT to be part of the Basic Structure in the Kesavananda Bharati judgment?",
+        "options": [
+            "Judicial review",
+            "Free and fair elections",
+            "Right to property",
+            "Republican form of government"
+        ],
+        "correct": 2,
+        "explanation": "Right to Property was downgraded to a legal right by the 44th Amendment."
+    }, {
+        "category": "Emergency Powers",
+        "question": "If the Lok Sabha is dissolved when a National Emergency is proclaimed, approval must be given within:",
+        "options": [
+            "1 month of reconstitution of Lok Sabha",
+            "6 months",
+            "30 days of proclamation",
+            "It does not need approval"
+        ],
+        "correct": 0,
+        "explanation": "Article 352(4) specifies approval within 1 month of Lok Sabha beginning."
+    }, {
+        "category": "Centre-State Relations",
+        "question": "In which situation can Parliament legislate on a subject in the State List?",
+        "options": [
+            "When a National Emergency is in force",
+            "When State Governor gives permission",
+            "When Chief Minister of a state requests it",
+            "Never, as State List is exclusively State power"
+        ],
+        "correct": 0,
+        "explanation": "During National Emergency, Parliament gets power over State List subjects."
+    }, {
+        "category": "Judiciary (Scenario)",
+        "question": "A High Court issues a writ to a private college for violating students' fundamental rights. Under which doctrine is this allowed?",
+        "options": [
+            "Doctrine of Basic Structure",
+            "Doctrine of State Action",
+            "Doctrine of Colourable Legislation",
+            "Doctrine of Waiver"
+        ],
+        "correct": 1,
+        "explanation": "Private bodies performing public functions fall under 'other authorities' (Article 12)."
+    }, {
+        "category": "Amendments",
+        "question": "Which Amendment is called the 'Mini Constitution' for making sweeping changes to the Constitution?",
+        "options": [
+            "24th Amendment",
+            "42nd Amendment",
+            "52nd Amendment",
+            "44th Amendment"
+        ],
+        "correct": 1,
+        "explanation": "42nd Amendment (1976) made extensive changes to FRs, DPSPs, and Preamble."
+    }, {
+        "category": "DPSP",
+        "question": "Which DPSP forms the basis for environmental protection laws in India?",
+        "options": [
+            "Article 43",
+            "Article 48A",
+            "Article 40",
+            "Article 43B"
+        ],
+        "correct": 1,
+        "explanation": "Article 48A (42nd Amendment) directs the State to protect the environment."
+    }, {
+        "category": "Citizenship",
+        "question": "A child is born in India in 1990 to foreign diplomats. According to the Citizenship Act 1955, the child:",
+        "options": [
+            "Automatically becomes an Indian citizen",
+            "Can become citizen only after naturalization",
+            "Becomes citizen only if one parent is Indian",
+            "Cannot be an Indian citizen at birth"
+        ],
+        "correct": 3,
+        "explanation": "Children of foreign diplomats are excluded from automatic citizenship."
+    }, {
+        "category": "Parliament",
+        "question": "Which condition is NOT required for a Bill to qualify as a Money Bill?",
+        "options": [
+            "It must deal only with matters under Article 110",
+            "It must be certified by the Speaker",
+            "It must originate in the Lok Sabha",
+            "It must be approved by Rajya Sabha"
+        ],
+        "correct": 3,
+        "explanation": "Rajya Sabha cannot approve or reject money bills; it can only make suggestions."
+    }, {
+        "category": "FR Interpretation",
+        "question": "Which interpretation method did the SC use to broaden Article 21 from ‘procedure established by law’ to ‘fair, just, and reasonable procedure’?",
+        "options": [
+            "Originalism",
+            "Doctrinal interpretation",
+            "Harmonious construction",
+            "Purposive interpretation"
+        ],
+        "correct": 3,
+        "explanation": "Maneka Gandhi case adopted a purposive and expansive interpretation."
+    }, {
+        "category": "Governor",
+        "question": "Governor acts on his own discretion in which of the following scenarios?",
+        "options": [
+            "Dissolving the Lok Sabha",
+            "Appointing the Chief Minister when no party has majority",
+            "Signing Money Bills",
+            "Declaring National Emergency"
+        ],
+        "correct": 1,
+        "explanation": "Governor uses discretion only in absence of clear majority."
+    }, {
+        "category": "Judicial Review",
+        "question": "Which Article empowers the Supreme Court to review its own judgments?",
+        "options": [
+            "Article 137",
+            "Article 32",
+            "Article 142",
+            "Article 145"
+        ],
+        "correct": 0,
+        "explanation": "Article 137 gives SC power to review its own decisions."
+    }, {
+        "category": "Union Government",
+        "question": "Which body recommends the distribution of taxes between Centre and States?",
+        "options": [
+            "NITI Aayog",
+            "Finance Commission",
+            "GST Council",
+            "Planning Commission"
+        ],
+        "correct": 1,
+        "explanation": "Finance Commission (Art 280)."
+    }, {
+        "category": "FR vs DPSP",
+        "question": "Which case held that FRs and DPSPs should be harmoniously interpreted and neither should override the other?",
+        "options": [
+            "Minerva Mills",
+            "Kesavananda Bharati",
+            "Champakam Dorairajan",
+            "A.K. Gopalan"
+        ],
+        "correct": 0,
+        "explanation": "Minerva Mills balanced FRs and DPSPs."
+    }, {
+        "category": "Ordinance",
+        "question": "The President’s ordinance-making power is subject to which limitation?",
+        "options": [
+            "Must be approved by Governor",
+            "Cannot override Supreme Court judgments",
+            "Cannot amend the Constitution",
+            "Cannot be issued when Lok Sabha is dissolved"
+        ],
+        "correct": 2,
+        "explanation": "Constitution can be amended only by Parliament under Article 368."
+    }, {
+        "category": "Judicial Independence",
+        "question": "Which case held that judicial review of constitutional amendments is part of the Basic Structure?",
+        "options": [
+            "Kesavananda Bharati",
+            "S.R. Bommai",
+            "Puttaswamy",
+            "Golaknath"
+        ],
+        "correct": 0,
+        "explanation": "Kesavananda established judicial review as part of Basic Structure."
+    }, {
+        "category": "Federalism (Scenario)",
+        "question": "If Parliament makes a law on a State List subject due to Rajya Sabha resolution, for how long does the law remain valid initially?",
+        "options": [
+            "6 months",
+            "1 year",
+            "2 years",
+            "5 years"
+        ],
+        "correct": 2,
+        "explanation": "Such laws remain valid for 1 year but can be extended annually."
+    }, {
+        "category": "Preamble (Advanced)",
+        "question": "Which part of the Preamble was affected by the 42nd Amendment?",
+        "options": [
+            "Sovereign only",
+            "Socialist, Secular, and Integrity",
+            "Justice and Liberty",
+            "Democratic Republic"
+        ],
+        "correct": 1,
+        "explanation": "The words ‘Socialist’, ‘Secular’, and ‘Integrity’ were added in 1976."
+    }, {
+        "category": "FR Scenario",
+        "question": "A law requires mandatory Aadhaar for school admission in private schools. Which FR is most likely violated?",
+        "options": [
+            "Article 19",
+            "Article 21",
+            "Article 22",
+            "Article 32"
+        ],
+        "correct": 1,
+        "explanation": "Right to Privacy (under Article 21) may be violated due to forced data collection."
+    }, {
+        "category": "Anti-Defection",
+        "question": "Which authority decides disqualification of MPs under the Tenth Schedule?",
+        "options": [
+            "President",
+            "Vice President",
+            "Speaker/Chairman",
+            "Election Commission"
+        ],
+        "correct": 2,
+        "explanation": "Speaker (LS) or Chairman (RS) decides disqualification."
+    },
+
+    {
+        "category": "Fundamental Rights (Advanced)",
+        "question": "A public sector company refuses to hire a candidate only because of their religion. Which Fundamental Right is MOST directly violated?",
+        "options": [
+            "Article 14 – Equality before law",
+            "Article 16 – Equality of opportunity in public employment",
+            "Article 19 – Freedom of speech and expression",
+            "Article 21 – Protection of life and personal liberty"
+        ],
+        "correct": 1,
+        "explanation": "Since it is a public employment issue and discrimination is based on religion, Article 16 is directly violated."
+    },
+    {
+        "category": "Directive Principles",
+        "question": "Which Directive Principle forms the constitutional basis for laws like MGNREGA (Right to Work)?",
+        "options": [
+            "Article 39(a) – Equal right to adequate means of livelihood",
+            "Article 39A – Free legal aid",
+            "Article 41 – Right to work and public assistance",
+            "Article 43 – Living wage for workers"
+        ],
+        "correct": 2,
+        "explanation": "Article 41 explicitly mentions the right to work within the limits of the State’s capacity."
+    },
+    {
+        "category": "Judicial Review",
+        "question": "Which of the following is NOT subject to judicial review?",
+        "options": [
+            "Constitutional amendments",
+            "Pre-Constitutional laws",
+            "The President’s satisfaction in proclaiming Emergency (post-44th Amendment)",
+            "Speaker’s certification of a Money Bill"
+        ],
+        "correct": 3,
+        "explanation": "Speaker’s decision on Money Bill certification is generally not subject to judicial review (though debated)."
+    },
+    {
+        "category": "Federal Structure",
+        "question": "During President’s Rule under Article 356, which of the following remains suspended in that state?",
+        "options": [
+            "Fundamental Rights",
+            "The State Legislative Assembly",
+            "The State High Court",
+            "Right to Constitutional Remedies"
+        ],
+        "correct": 1,
+        "explanation": "Only the elected State government and assembly are suspended; FRs and High Court continue to function."
+    },
+    {
+        "category": "Parliamentary Procedure",
+        "question": "A bill seeks to change the powers of the Supreme Court. What type of majority is required in Parliament?",
+        "options": [
+            "Simple majority of members present and voting",
+            "Absolute majority of total membership",
+            "Special majority under Article 368",
+            "Special majority plus ratification by half of the States"
+        ],
+        "correct": 3,
+        "explanation": "Changing SC powers affects the federal structure and requires ratification by at least half of the States."
+    },
+    {
+        "category": "Election Commission",
+        "question": "Which constitutional provision ensures the independence of the Election Commission of India?",
+        "options": [
+            "Chief Election Commissioner can only be removed like a Supreme Court judge",
+            "CEC is appointed for life",
+            "CEC’s salary is decided by the President alone",
+            "CEC is not answerable to any court"
+        ],
+        "correct": 0,
+        "explanation": "Removal procedure similar to SC judge ensures security of tenure and independence."
+    },
+    {
+        "category": "Right to Life (Advanced)",
+        "question": "The Supreme Court held that the 'Right to live with human dignity' is part of Article 21 in which case?",
+        "options": [
+            "Maneka Gandhi v. Union of India",
+            "Francis Coralie Mullin v. Administrator, Union Territory of Delhi",
+            "Kesavananda Bharati v. State of Kerala",
+            "A.K. Gopalan v. State of Madras"
+        ],
+        "correct": 1,
+        "explanation": "Francis Coralie Mullin expanded Article 21 to include the right to live with human dignity."
+    },
+    {
+        "category": "Schedules & Anti-Defection",
+        "question": "The Anti-Defection law is contained in which Schedule of the Constitution?",
+        "options": [
+            "Eighth Schedule",
+            "Tenth Schedule",
+            "Seventh Schedule",
+            "Ninth Schedule"
+        ],
+        "correct": 1,
+        "explanation": "Anti-Defection provisions are in the Tenth Schedule (added by 52nd Amendment)."
+    },
+    {
+        "category": "Local Self-Government",
+        "question": "Which Constitutional Amendment gave constitutional status to Panchayati Raj Institutions?",
+        "options": [
+            "42nd Amendment",
+            "73rd Amendment",
+            "74th Amendment",
+            "86th Amendment"
+        ],
+        "correct": 1,
+        "explanation": "The 73rd Amendment (1992) granted constitutional status to rural local bodies."
+    },
+    {
+        "category": "Ordinance Power (Scenario)",
+        "question": "The President issues an ordinance when Parliament is not in session. Lok Sabha approves it, but Rajya Sabha rejects it. What happens to the ordinance?",
+        "options": [
+            "It becomes a Constitutional Amendment",
+            "It lapses immediately",
+            "It continues as law for 6 months",
+            "It is sent back to the President for reconsideration"
+        ],
+        "correct": 1,
+        "explanation": "If one House disapproves, the ordinance ceases to operate."
+    },
+    {
+        "category": "Amendment Limits",
+        "question": "Which among the following CAN be altered by a Constitutional Amendment?",
+        "options": [
+            "Basic Structure",
+            "Power of judicial review",
+            "Fundamental Rights subject to Basic Structure",
+            "Republican form of government"
+        ],
+        "correct": 2,
+        "explanation": "FRs can be amended as long as they do not damage the Basic Structure."
+    },
+    {
+        "category": "Minority Rights",
+        "question": "Which Article protects the right of minorities to establish and administer educational institutions?",
+        "options": [
+            "Article 25",
+            "Article 29",
+            "Article 30",
+            "Article 27"
+        ],
+        "correct": 2,
+        "explanation": "Article 30 grants minorities the right to establish and administer educational institutions."
+    },
+    {
+        "category": "President (Powers)",
+        "question": "Which of the following powers of the President is NOT exercised on the aid and advice of the Council of Ministers?",
+        "options": [
+            "Appointment of Prime Minister",
+            "Promulgation of ordinances",
+            "Summoning of Parliament",
+            "Addressing Parliament at the beginning of a session"
+        ],
+        "correct": 0,
+        "explanation": "Appointment of PM, especially in a hung Parliament, involves the President’s discretion."
+    },
+    {
+        "category": "Supreme Court – Special Powers",
+        "question": "Under which Article can the Supreme Court issue directions to do 'complete justice' in any case?",
+        "options": [
+            "Article 32",
+            "Article 136",
+            "Article 141",
+            "Article 142"
+        ],
+        "correct": 3,
+        "explanation": "Article 142 gives SC extraordinary powers to pass any order necessary for complete justice."
+    },
+    {
+        "category": "Schedules (Land Reform)",
+        "question": "Originally, which Schedule was used to protect land reform laws from judicial review?",
+        "options": [
+            "Seventh Schedule",
+            "Ninth Schedule",
+            "Tenth Schedule",
+            "Eleventh Schedule"
+        ],
+        "correct": 1,
+        "explanation": "Ninth Schedule was introduced by the 1st Amendment for this purpose."
+    },
+    {
+        "category": "Secularism (Advanced)",
+        "question": "In India, secularism mainly means:",
+        "options": [
+            "Total separation of religion and state like in France",
+            "State gives official status to one religion",
+            "State maintains principled distance but can intervene to reform religious practices",
+            "State is completely controlled by religious authorities"
+        ],
+        "correct": 2,
+        "explanation": "India follows 'positive secularism' where the State can reform religious practices for social justice."
+    },
+    {
+        "category": "Basic Structure Doctrine",
+        "question": "Which of the following is NOT typically listed as part of the Basic Structure?",
+        "options": [
+            "Supremacy of the Constitution",
+            "Sovereign, Socialist, Secular, Democratic, Republic nature",
+            "Parliament’s unlimited power to amend any part",
+            "Judicial review"
+        ],
+        "correct": 2,
+        "explanation": "Parliament’s power to amend is limited; unlimited amending power would itself violate Basic Structure."
+    },
+    {
+        "category": "Fundamental Duties (Advanced)",
+        "question": "Which Fundamental Duty is directly related to environmental protection?",
+        "options": [
+            "To cherish the ideals of the freedom struggle",
+            "To defend the country",
+            "To value and preserve rich heritage of our composite culture",
+            "To protect and improve the natural environment"
+        ],
+        "correct": 3,
+        "explanation": "This is explicitly mentioned in Article 51A(g)."
+    },
+    {
+        "category": "Right to Education",
+        "question": "Right to Free and Compulsory Education under Article 21A applies to which age group?",
+        "options": [
+            "0–6 years",
+            "6–14 years",
+            "14–18 years",
+            "6–16 years"
+        ],
+        "correct": 1,
+        "explanation": "Article 21A covers children between 6 and 14 years of age."
+    },
+    {
+        "category": "Governor–Centre Relations",
+        "question": "If a Governor reserves a Bill for the consideration of the President, the President may:",
+        "options": [
+            "Only assent to it",
+            "Only withhold assent",
+            "Either assent, withhold assent, or return for reconsideration (except money bills)",
+            "Can only send it to Supreme Court"
+        ],
+        "correct": 2,
+        "explanation": "President has wide options when a Bill is reserved by the Governor."
+    }
+]
