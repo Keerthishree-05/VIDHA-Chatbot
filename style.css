@@ -2544,6 +2544,32 @@
         letter-spacing: 1px !important;
     }
 }
+/* 📱 Mobile Fix — Make Preamble Much Smaller */
+@media (max-width: 480px) {
+
+    .message-bot.preamble {
+        padding: 0.9rem 1rem !important;
+        font-size: 0.8rem !important;
+        line-height: 1.45 !important;
+        border-radius: 12px !important;
+        margin-top: 0.6rem !important;
+    }
+
+    /* Smaller Ashoka Chakra watermark */
+    .message-bot.preamble::before {
+        width: 70px !important;
+        height: 70px !important;
+        opacity: 0.06 !important;
+    }
+
+    /* Title inside preamble */
+    .message-bot.preamble strong {
+        font-size: 1rem !important;
+        margin-bottom: 0.4rem !important;
+        letter-spacing: 0.5px !important;
+    }
+}
+
 
 
 
