@@ -2391,18 +2391,97 @@
         transform: none !important;
     }
     /* CHAT AREA BACKGROUND — LIGHT MODE */
+    /* ================================
+   🇮🇳 CHAT AREA BACKGROUND FIXED
+   Mobile + Desktop Compatible
+=================================*/
     
     #chat-area {
-        background: url("flag\(light\).png") center/contain no-repeat;
-        background-color: rgba(255, 255, 255, 1);
-        /* keep white card look */
-        position: relative;
+        background-image: url("flag(light).png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #ffffff;
+        padding: 1.5rem;
+        border-radius: 20px;
+        overflow-y: auto;
     }
-    /* CHAT AREA BACKGROUND — DARK MODE */
+    /* DARK MODE VERSION */
     
     body.dark-mode #chat-area {
-        background: url("flag\(dark\).png") center/contain no-repeat;
-        background-color: rgba(0, 0, 0, 1);
-        /* dark frosted look */
-        background-blend-mode: lighten;
+        background-image: url("flag(dark).png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #0f0f1e;
+    }
+    /* MOBILE FIX — keeps image centered & fits correctly */
+    
+    @media (max-width: 768px) {
+        /* Reduce header height */
+        header.flex-between.container {
+            padding: 0.7rem 0.5rem !important;
+            gap: 0.3rem !important;
+        }
+        /* Make flag smaller */
+        header img.flag-round {
+            width: 42px !important;
+            height: 42px !important;
+        }
+        /* Title smaller */
+        header h1.text-gradient,
+        header h1.text-gradient span {
+            font-size: 1.3rem !important;
+            letter-spacing: 0.08rem !important;
+        }
+        /* Subtitle smaller */
+        header h3 {
+            font-size: 0.8rem !important;
+        }
+        /* Move topic selector closer */
+        .dropdown-select {
+            padding: 0.3rem 0.5rem !important;
+            font-size: 0.8rem !important;
+        }
+        /* Buttons smaller */
+        .btn.btn-sunset.btn-sm {
+            width: 32px !important;
+            height: 32px !important;
+            font-size: 1rem !important;
+        }
+        @media (max-width: 768px) {
+            /* Reduce chat area height */
+            #chat-area {
+                height: 48vh !important;
+                padding: 0.8rem !important;
+            }
+            /* Reduce bot message size */
+            .message {
+                padding: 0.7rem 1rem !important;
+                font-size: 0.85rem !important;
+                max-width: 85% !important;
+            }
+            /* Reduce typing dots size */
+            .typing span {
+                width: 6px;
+                height: 6px;
+            }
+            /* Reduce bottom input height */
+            #user-input {
+                padding: 0.7rem 1rem !important;
+                font-size: 0.85rem !important;
+            }
+            /* Reduce footer space */
+            footer {
+                padding: 0.6rem !important;
+            }
+        }
+    }
+    /* SMALL MOBILE (very small devices) */
+    
+    @media (max-width: 480px) {
+        #chat-area {
+            background-size: 75%;
+            height: 50vh !important;
+        }
     }
