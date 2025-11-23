@@ -2517,6 +2517,34 @@
         line-height: 1.5 !important;
     }
 }
+/* 📱 KEEP SUBTITLE BESIDE VIDHA ON MOBILE */
+@media (max-width: 480px) {
+
+    /* Keep VIDHA + subtitle in one row */
+    header .flex-center.gap-md:first-child {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 0.35rem !important;
+        white-space: nowrap !important;
+    }
+
+    /* Subtitle visible and small */
+    header h3 {
+        display: block !important;
+        font-size: 0.75rem !important;
+        margin-top: 0 !important;
+        opacity: 0.9;
+        white-space: nowrap !important;
+    }
+
+    /* Make VIDHA slightly smaller to fit */
+    header h1.text-gradient {
+        font-size: 1.4rem !important;
+        letter-spacing: 1px !important;
+    }
+}
+
 
 
 
