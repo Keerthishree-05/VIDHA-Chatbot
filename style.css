@@ -2110,7 +2110,7 @@
     /* 🌸 FINAL — Make header fill space and look bold */
     
     header.flex-between.container {
-        padding: 1rem 1rem !important;
+        padding: 1.5rem 1rem !important;
         /* taller header for balance */
         align-items: center !important;
     }
@@ -2485,4 +2485,5 @@
             height: 50vh !important;
         }
     }
+
 
