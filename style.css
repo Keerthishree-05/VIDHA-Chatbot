@@ -2417,7 +2417,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        background-color: #0f0f1e;
+        background-color: black;
     }
     /* MOBILE FIX — keeps image centered & fits correctly */
     
@@ -2611,6 +2611,7 @@
         line-height: 1.35;
     }
 }
+
 
 
 
