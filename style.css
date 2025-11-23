@@ -2489,6 +2489,35 @@
             height: 50vh !important;
         }
     }
+/* 🌐 FIX PREAMBLE ON SMALL SCREENS */
+@media (max-width: 480px) {
+
+    .message-bot.preamble {
+        padding: 1rem !important;
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+        border-radius: 14px !important;
+        margin: 0.4rem 0 !important;
+        background-size: 150% 150% !important;
+    }
+
+    .message-bot.preamble::before {
+        width: 80px !important;
+        height: 80px !important;
+        opacity: 0.05 !important;
+    }
+
+    .message-bot.preamble strong {
+        font-size: 1rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .message-bot.preamble em {
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+    }
+}
+
 
 
 
