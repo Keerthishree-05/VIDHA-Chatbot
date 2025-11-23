@@ -216,7 +216,7 @@ topicsSelect.addEventListener("change", (e) => {
       <div class="preamble"
            style="background: linear-gradient(135deg, #ff9f43, #feca57, #ff6b6b);
                   color: #1a1a2e; padding: 0.5rem 0.5rem; border-radius: 15px;
-                  font-size:0.8rem; line-height: 0.5; box-shadow: 0 0 20px rgba(255,165,0,0.3);
+                  font-size:0.8rem; line-height: 0.3;line-width:0.1rem; box-shadow: 0 0 20px rgba(255,165,0,0.3);
                   animation: fadeInUpChat 1.2s ease-out;">
          <strong>The Preamble to the Constitution of India</strong>
         <em>"We, the People of India, having solemnly resolved to constitute India into a
@@ -594,6 +594,7 @@ function handleQuizResponse(raw) {
 
 
 /* ---------- End of file ---------- */}
+
 
 
 
