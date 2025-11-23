@@ -218,7 +218,7 @@ topicsSelect.addEventListener("change", (e) => {
                   color: #1a1a2e; padding: 0.5rem 0.5rem; border-radius: 15px;
                   font-size:0.8rem; line-height: 0.5; box-shadow: 0 0 20px rgba(255,165,0,0.3);
                   animation: fadeInUpChat 1.2s ease-out;">
-         <strong>The Preamble to the Constitution of India</strong><br>
+         <strong>The Preamble to the Constitution of India</strong>
         <em>"We, the People of India, having solemnly resolved to constitute India into a
         SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC and to secure to all its citizens:<br><br>
         JUSTICE, social, economic and political;<br>
@@ -594,5 +594,6 @@ function handleQuizResponse(raw) {
 
 
 /* ---------- End of file ---------- */}
+
 
 
