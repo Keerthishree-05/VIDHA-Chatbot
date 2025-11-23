@@ -264,7 +264,7 @@ anthemToggle.addEventListener("click", () => {
     if (anthemAudio.paused) {
         anthemAudio.play().catch(() => {});
         anthemToggle.textContent = "⏸️";
-        typeBotMessage("🎵 Playing the National Anthem softly in the background.");
+        typeBotMessage("🎵 Playing the National Song softly in the background.");
     } else {
         anthemAudio.pause();
         anthemToggle.textContent = "🔊";
@@ -591,5 +591,6 @@ function handleQuizResponse(raw) {
     "Typed answers are not currently active — please click options in the quiz UI."
   );
 }
+
 
 /* ---------- End of file ---------- */}
