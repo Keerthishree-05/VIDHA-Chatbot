@@ -2617,7 +2617,7 @@
         background-image: linear-gradient( 180deg, #FF671F 0%, /* strong saffron */
         #FF671F 70%, /* keep saffron solid */
         #FFFFFF 50%, /* very thin white line */
-        #046A38 75%, /* strong green */
+        #046A38 60%, /* strong green */
         #046A38 100%/* solid green */
         ) !important;
         background-clip: text !important;
@@ -2628,6 +2628,7 @@
         /* makes colors look darker */
     }
    
+
 
 
 
