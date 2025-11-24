@@ -80,14 +80,14 @@ function greetOnLoad() {
         const today = new Date();
         const isConstitutionDay = today.getMonth() === 10 && today.getDate() === 26;
         if (isConstitutionDay) {
-            const msg = `👋 Hello — I’m <strong>VIDHA</strong>, your Constitutional Awareness Bot.<br>🇮🇳 <strong>Happy Constitution Day!</strong> `;
+            const msg = `👋 Hello !<strong>Happy Constitution Day!</strong> `;
             typeBotMessage(msg);
             document.body.style.background =
                 "linear-gradient(135deg, #FF9933, #FFFFFF, #138808)";
         } else {
             if (userName) {
                 typeBotMessage(
-                    `${getTimeGreeting()}, ${userName}! 👋 I’m VIDHA — ask me anything about the Constitution.`
+                    `${getTimeGreeting()}, ${userName}! 👋 Ask me anything about the Constitution.`
                 );
             } else {
                 typeBotMessage(
@@ -594,6 +594,7 @@ function handleQuizResponse(raw) {
 
 
 /* ---------- End of file ---------- */}
+
 
 
 
