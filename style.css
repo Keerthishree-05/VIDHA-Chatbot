@@ -2616,9 +2616,9 @@
 header h1.text-gradient span {
     background-image: linear-gradient(
         180deg,
-        #FF7A1F 0%,      /* brighter saffron */
-        #FFFFFF 40%,     /* white */
-        #045A2E 63%      /* darker deep green */
+        #FF9933 0%,      /* brighter saffron */
+        #FFFFFF 40%,     /* bright white */
+        #097F44 63%      /* brighter deep green */
     ) !important;
 
     background-clip: text !important;
@@ -2633,24 +2633,23 @@ header h1.text-gradient span {
         0 0 4px rgba(0,0,0,0.7),
         0 0 8px rgba(0,0,0,0.6);
 }
-
 @media (max-width: 600px) {
     header h1.text-gradient span {
-
-        /* Increase saffron area + stronger green */
         background-image: linear-gradient(
             180deg,
-            #FF8A2F 0%,      /* extra bright saffron */
-            #FF8A2F 22%,     /* extend saffron */
-            #FFFFFF 48%,     /* white */
-            #035026 75%      /* deeper, darker green */
+            #FFAA44 0%,     /* brighter saffron */
+            #FFAA44 22%,    /* same distribution */
+            #FFFFFF 48%,    /* bright white */
+            #0A7A3A 75%     /* bright deep green */
         ) !important;
 
-        /* Extra brightness + contrast only on mobile */
-        filter: brightness(165%) contrast(180%);
+        /* Only brightness boost */
+        filter: brightness(150%) contrast(160%);
         font-size: 2.3rem;
     }
 }
+
+
 
 
 
