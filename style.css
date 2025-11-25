@@ -2612,35 +2612,7 @@
     }
 }
     
-  /* 🇮🇳 Make "VIDHA" text tricolour (saffron–white–green) */
-header h1.text-gradient span {
-        background-image: linear-gradient( 180deg, darkorange 0%, /* strong saffron */
-        white 33%, /* white */
-        darkgreen 63%/* strong green */
-        ) !important;
-        background-clip: text !important;
-        -webkit-background-clip: text !important;
-        color: transparent !important;
-        -webkit-text-fill-color: transparent !important;
-        font-weight: 900;
-        letter-spacing: 1px;
-        /* 🔥 DARK OUTLINE = FULL VISIBILITY ON MOBILE */
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.5), 0 0 6px rgba(0, 0, 0, 0.4);
-    }
-    /* 🌟 Extra boost ONLY on mobile screens */
-    
-    @media (max-width: 600px) {
-        header h1.text-gradient span {
-            filter: brightness(140%) contrast(160%);
-            font-size: 2.2rem;
-            /* slightly bigger for visibility */
-        }
-    }
-
-
-
-
-
+  
 
 
 
