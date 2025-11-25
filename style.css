@@ -2613,6 +2613,28 @@
 }
     
   
+/* 🔥 FINAL OVERRIDE FOR VIDHA TRICOLOUR */
+header h1.text-gradient span {
+    background-image: linear-gradient(
+        to bottom,
+        #FF671F 0%,      /* saffron */
+        #FF671F 33%,
+        #FFFFFF 34%,     /* white */
+        #FFFFFF 66%,
+        #046A38 67%,     /* green */
+        #046A38 100%
+    ) !important;
+
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+
+    font-weight: 900 !important;
+    display: inline-block !important;
+}
+
 
 
 
