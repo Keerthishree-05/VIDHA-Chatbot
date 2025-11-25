@@ -2614,20 +2614,33 @@
     
   /* 🇮🇳 Make "VIDHA" text tricolour (saffron–white–green) */
  header h1.text-gradient span {
-        background-image: linear-gradient( 180deg, #FF671F 0%, /* strong saffron */
-        #FF671F 70%, /* keep saffron solid */
-        #FFFFFF 50%, /* very thin white line */
-        #046A38 60%, /* strong green */
-        #046A38 100%/* solid green */
-        ) !important;
-        background-clip: text !important;
-        -webkit-background-clip: text !important;
-        color: transparent !important;
-        -webkit-text-fill-color: transparent !important;
-        font-weight: 900;
-        /* makes colors look darker */
+    background-image: linear-gradient(
+        180deg,
+        #FF671F 10%,   /* bold saffron */
+        #FF671F 35%,
+        #FFFFFF 36%,   /* very thin white */
+        #FFFFFF 40%,
+        #046A38 41%,   /* bold green */
+        #046A38 100%
+    ) !important;
+
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+
+    font-weight: 900;
+}
+
+/* 🔥 Force darker colors on mobile */
+@media (max-width: 600px) {
+    header h1.text-gradient span {
+        filter: contrast(150%) brightness(120%);
     }
+}
+
    
+
 
 
 
