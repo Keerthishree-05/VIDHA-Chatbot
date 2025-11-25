@@ -2614,8 +2614,8 @@
     
   /* 🇮🇳 Make "VIDHA" text tricolour (saffron–white–green) */
 header h1.text-gradient span {
-        background-image: linear-gradient( 180deg, orange 0%, /* strong saffron */
-        white 40%, /* white */
+        background-image: linear-gradient( 180deg, darkorange 0%, /* strong saffron */
+        white 33%, /* white */
         darkgreen 63%/* strong green */
         ) !important;
         background-clip: text !important;
@@ -2636,6 +2636,7 @@ header h1.text-gradient span {
             /* slightly bigger for visibility */
         }
     }
+
 
 
 
