@@ -2616,7 +2616,7 @@
  header h1.text-gradient span {
         background-image: linear-gradient( 180deg, #FF671F 0%, /* strong saffron */
         #FFFFFF 40%, /* white */
-        #046A38 60%/* strong green */
+        #046A38 75%/* strong green */
         ) !important;
         background-clip: text !important;
         -webkit-background-clip: text !important;
@@ -2636,6 +2636,7 @@
             /* slightly bigger for visibility */
         }
     }
+
 
 
 
