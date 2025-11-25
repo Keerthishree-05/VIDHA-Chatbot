@@ -2613,12 +2613,13 @@
 }
     
   /* 🇮🇳 Make "VIDHA" text tricolour (saffron–white–green) */
+/* 🌈 DESKTOP – Bright & clean tricolour */
 header h1.text-gradient span {
     background-image: linear-gradient(
         180deg,
-        #FF9933 0%,      /* brighter saffron */
-        #FFFFFF 40%,     /* bright white */
-        #097F44 63%      /* brighter deep green */
+        #FF7A1F 0%,      /* bright saffron */
+        #FFFFFF 40%,     /* white */
+        #045A2E 63%      /* dark green */
     ) !important;
 
     background-clip: text !important;
@@ -2633,37 +2634,33 @@ header h1.text-gradient span {
         0 0 4px rgba(0,0,0,0.7),
         0 0 8px rgba(0,0,0,0.6);
 }
+
+
+/* 📱 MOBILE – Super bright + perfect visibility */
 @media (max-width: 600px) {
     header h1.text-gradient span {
+
+        /* SAME layout — only colors brighter */
         background-image: linear-gradient(
             180deg,
-            #FFAA44 0%,     /* brighter saffron */
-            #FFAA44 22%,    /* same distribution */
-            #FFFFFF 48%,    /* bright white */
-            #0A7A3A 75%     /* bright deep green */
+            #FF8A2F 0%,      
+            #FF8A2F 22%,     
+            #FFFFFF 48%,     
+            #035026 75%      
         ) !important;
 
-        /* Only brightness boost */
-        filter: brightness(150%) contrast(160%);
+        /* Extra brightness for mobile screens */
+        filter: brightness(165%) contrast(185%);
+
         font-size: 2.3rem;
+
+        /* ⭐ THE IMPORTANT FIX */
+        text-shadow:
+            0 0 2px rgba(0,0,0,1),
+            0 0 4px rgba(0,0,0,0.9),
+            0 0 6px rgba(0,0,0,0.85);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
