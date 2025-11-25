@@ -2618,10 +2618,10 @@ header h1.text-gradient span {
     background-image: linear-gradient(
         to bottom,
         #FF671F 0%,      /* saffron */
-        #FF671F 33%,
-        #FFFFFF 34%,     /* white */
-        #FFFFFF 66%,
-        #046A38 67%,     /* green */
+        #FF671F 40%,
+        #FFFFFF 41%,     /* white */
+        #FFFFFF 55%,
+        #046A38 56%,     /* green */
         #046A38 100%
     ) !important;
 
@@ -2634,6 +2634,7 @@ header h1.text-gradient span {
     font-weight: 900 !important;
     display: inline-block !important;
 }
+
 
 
 
